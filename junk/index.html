@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="dashboradStyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body>
+
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>Dashboard</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a>
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div>
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href="" class="active"><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-file"></i><span>Departments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+            <section id="main-content">
+
+            <section id="overview-cards">
+                <div class="cards">
+                    <div class="card-single">
+                     <div>
+                        <h1>54</h1>
+                        <span>Staffs</span>
+                     </div>
+                     <div>
+                        <span class="fa-solid fa-users"></span> 
+                     </div>
+                    </div> 
+                    
+          
+                    <div class="card-single">
+                        <div>
+                           <h1>54</h1>
+                           <span>Patients</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-hospital-user"></span> 
+                        </div>
+                       </div> 
+          
+                       <div class="card-single">
+                        <div>
+                           <h1>79</h1>
+                           <span>Today's Visits</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-clipboard-check"></span> 
+                        </div>
+                       </div> 
+          
+                       <div class="card-single">
+                        <div>
+                           <h1>124</h1>
+                           <span>Departments</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-tree-city"></span> 
+                        </div>
+                       </div> 
+          
+                       <div class="card-single">
+                        <div>
+                           <h1>45</h1>
+                           <span>No of Drugs</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-kit-medical"></span> 
+                        </div>
+                       </div> 
+                    
+                       <div class="card-single">
+                        <div>
+                           <h1>45</h1>
+                           <span>Low Stock Drugs</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-kit-medical"></span> 
+                        </div>
+                       </div>
+                </div>
+            </section>
+
+
+            <section id="date-sec">
+             <div class="date-container">
+                <strong><i class="fa-solid fa-calendar"></i><span>Today - 2023-08-17</span></strong>
+             </div>
+            </section>
+
+
+            <section id="statistics">
+                <div class="stat-header">
+                    <label><p><Strong>Patient Visits</Strong></p></label>
+                    <div class="stat-btns">
+                     <button class="ybtn">Yearly</button> 
+                     <button class="mbtn">monthly</button> 
+                     <button class="wbtn">weekly</button> 
+                    </div>
+                  </div>
+
+
+                  <div id="week">
+                    <div class="graph-plot swiper">
+                        <div class="slide-container1">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <p>week: <span><strong> 1</strong></span></p>
+                              <div class="container">
+                                <div class="container-container">
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 20" title1="20"></div>
+                                        </div>
+                                        <div class="bar-label">2017</div>
+                                    </div>
+                        
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 30" title1="30"></div>
+                                       
+                                        </div>
+                                        <div class="bar-label">2018 2018 2018</div>
+                                    </div>
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 50" title1="50"></div>
+                                     
+                                        </div>
+                                        <div class="bar-label">2019</div>
+                                    </div>
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 99" title1="70"></div>
+                                          
+                                        </div>
+                                        <div class="bar-label">2020</div>
+                                    </div>
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 99" title1="70"></div>
+                                          
+                                        </div>
+                                        <div class="bar-label">2020</div>
+                                    </div>
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 99" title1="70"></div>
+                                          
+                                        </div>
+                                        <div class="bar-label">2020</div>
+                                    </div>
+                                    <div class="chart-item">
+                                        <div class="bar">
+                                            <div class="bar-item" style="--barSize: 99" title1="70"></div>
+                                          
+                                        </div>
+                                        <div class="bar-label">2020</div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                  
+                            <div class="swiper-slide">
+                              <p>weekweekweekweek: <span><strong> 2</strong></span></p>
+                             
+                            </div>
+                  
+                            <div class="swiper-slide">
+                              <p>week <span><strong>3</strong></span></p>
+                            </div>
+                            
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div id="month">
+                        <div class="graph-plot swiper">
+                          <div class="slide-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                               <p>month: <span><strong> june 2023</strong></span></p>
+                                <div class="container">
+                                  <div class="container-container">
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 20" title1="20"></div>
+                                          </div>
+                                          <div class="bar-label">2017</div>
+                                      </div>
+                          
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 30" title1="30"></div>
+                                         
+                                          </div>
+                                          <div class="bar-label">2018 2018 2018</div>
+                                      </div>
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 50" title1="50"></div>
+                                       
+                                          </div>
+                                          <div class="bar-label">2019</div>
+                                      </div>
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 99" title1="70"></div>
+                                            
+                                          </div>
+                                          <div class="bar-label">2020</div>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+                    
+                              <div class="swiper-slide">
+                                <p>month: <span><strong> may 2023</strong></span></p>
+                                
+                              </div>
+                    
+                              <div class="swiper-slide">
+                                <p>Month: <span><strong> april 2023</strong></span></p>
+                              </div>
+                              
+                              </div>
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+                          </div>
+                          </div>
+                      </div>
+
+                      <div id="year">
+                        <div class="graph-plot swiper">
+                          <div class="slide-container2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <p>Year <span><strong>  2023</strong></span></p>
+                                <div class="container">
+                                  <div class="container-container">
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 20" title1="20"></div>
+                                          </div>
+                                          <div class="bar-label">2017</div>
+                                      </div>
+                          
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 30" title1="30"></div>
+                                         
+                                          </div>
+                                          <div class="bar-label">2018 2018 2018</div>
+                                      </div>
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 50" title1="50"></div>
+                                       
+                                          </div>
+                                          <div class="bar-label">2019</div>
+                                      </div>
+                                      <div class="chart-item">
+                                          <div class="bar">
+                                              <div class="bar-item" style="--barSize: 99" title1="70"></div>
+                                            
+                                          </div>
+                                          <div class="bar-label">2020</div>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+                    
+                              <div class="swiper-slide">
+                                <p>yeat: <span><strong>2023</strong></span></p>
+                                
+                              </div>
+                    
+                              <div class="swiper-slide">
+                                <p>Year: <span><strong>2023</strong></span></p>
+                              </div>
+                              
+                              </div>
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+                          </div>
+                          </div>
+                      </div>
+ 
+            </section>
+
+
+          <section id="app-recent-sec">
+            <div class="app-sec">
+                <div class="header-sec-app">
+                    <h3>Today's Appointments</h3>
+                    <label class="app-num">3</label>
+                </div>
+                <div class="app-list">
+                    <div class="app-list-single">
+                        <label class="name-avatar"><i class="fa-solid fa-hospital-user"></i><span>Madeline Wends</span></label>
+                        <small>16:00 - 13:00</small>
+                    </div>
+                    <div class="app-list-single">
+                        <label class="name-avatar"><i class="fa-solid fa-hospital-user"></i><span>Madeline Wends</span></label>
+                        <small>16:00 - 13:00</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="recent-patients">
+               <div class="header-rec">
+                <h3>Recent Patients</h3>
+               </div>
+               <div class="rec-list-pat">
+                <div class="rec-list-single">
+                    <label class="name-avatar"><i class="fa-solid fa-hospital-user"></i><span>Madeline Wends</span></label>
+                    <small>94943003HPN1R</small>
+                </div>
+               </div>
+            </div>
+
+          </section>
+
+          <section id="hspt-resource">
+            <div class="resources-card">
+                <p><strong>Available Hospital equpments</strong></p>
+                <div class="resource-list">
+               <label>
+                <p id="single-resource">wheelchairs</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">Beds</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">Wards fffffff ggghh hhjjjj jjhhhghgg</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">MRI Machines</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">Beds</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">Wards fffffff ggghh hhjjjj jjhhhghgg</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">MRI Machines</p>
+                <p id="num">4</p>
+               </label>
+               <label>
+                <p id="single-resource">Beds</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">Wards fffffff ggghh hhjjjj jjhhhghgg</p>
+                <p id="num">4</p>
+               </label>
+            
+               <label>
+                <p id="single-resource">MRI Machines</p>
+                <p id="num">4</p>
+               </label>
+              
+              </div>
+                  </div>
+
+
+
+                  <div class="staff-list">
+                    <p><strong>Hospital Staffs</strong></p>
+                <div class="inner-staff-list">
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+              
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+               <label>
+                <p id="single-staff">Dismas Wanyala kizai</p>
+                <p id="des">Doctor</p>
+               </label>
+            
+               <label>
+                <p id="single-staff">Dismas Wanyala</p>
+                <p id="des">Doctor</p>
+               </label>
+              
+                  </div>
+                  </div>
+
+
+
+          </section>
+
+            </section>
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+
+
+    // graphing stylings
+    $('.mbtn').click(function(){
+      $('#month').addClass('display');
+      $('#month').removeClass('nodisplay');
+      $('#week').addClass('nodisplay');
+      $('#week').removeClass('display');
+      $('#year').addClass('nodisplay');
+      $('#year').removeClass('display');
+  // $('#month').addClass('display');
+  // $('#week').addClass('nodisplay');
+  // $('#year').removeClass('display');
+  // $('#month').removeClass('nodisplay');
+  loadSwiper();
+});
+    
+$('.wbtn').click(function(){
+  $('#week').addClass('display');
+  $('#week').removeClass('nodisplay');
+  $('#month').addClass('nodisplay');
+  $('#month').removeClass('display');
+  $('#year').addClass('nodisplay');
+  $('#year').removeClass('display');
+
+
+
+
+
+  //   $('#week').addClass('display');
+  //   $('#month').removeClass('display');
+  // $('#year').removeClass('display');
+  // $('#week').removeClass('nodisplay');
+  loadWeekSwiper();
+});
+  
+$('.ybtn').click(function(){
+  $('#year').addClass('display');
+  $('#year').removeClass('nodisplay');
+  $('#week').addClass('nodisplay');
+    $('#week').removeClass('display');
+  $('#month').addClass('nodisplay');
+  $('#month').removeClass('display');
+
+
+  //   $('#year').addClass('display');
+  //   $('#week').removeClass('display');
+  // $('#month').removeClass('display');
+  // $('#month').addClass('nodisplay');
+  loadYearSwiper();
+});
+    </script>
+
+
+<!-- Swiper JS -->
+<script src="resources/CDN-links/swiper-bundle.min.js"></script>
+     <!-- Initialize Swiper -->
+ <script>
+
+window.onload = function() {
+  // Call your method here
+  loadWeekSwiper();
+};
+ 
+function loadWeekSwiper(){
+    var weekSwiper = new Swiper(".slide-container1", {
+      slidesPerView: 1,
+    //   slidesPerGroup: 1,
+      spaceBetween: 20,
+      centerSlide: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+
+0:{
+slidesPerView: 1,
+ },
+ 280:{
+slidesPerView: 1,
+ },
+ 450:{
+   slidesPerView: 1,
+  },
+  540:{
+   slidesPerView: 1,
+  },
+600:{
+   slidesPerView: 1,
+  },
+
+1000:{
+   slidesPerView: 1,
+  },
+  1024:{
+   slidesPerView: 2,
+  },
+   },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+}
+
+     function loadSwiper(){
+        var swiper = new Swiper(".slide-container", {
+      slidesPerView: 1,
+      // slidesPerGroup: 4,
+      spaceBetween: 10,
+      centerSlide: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+}  
+
+
+function loadYearSwiper(){
+    var weekSwiper = new Swiper(".slide-container2", {
+      slidesPerView: 1,
+      // slidesPerGroup: 4,
+      spaceBetween: 10,
+      centerSlide: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+}
+
+
+
+  </script>
+
+
+</body>
+</html>

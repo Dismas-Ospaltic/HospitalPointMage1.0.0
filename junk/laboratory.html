@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="laboratoryStyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body>
+
+
+
+    <section id="Add-pat-labtest-card">
+        <div class="field-form">
+        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+        <h2>Add Laboratory Test</h2>
+        <div class="message-dis">
+          <p>Patient add successfully</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+    
+        <div class="message-dis-err">
+          <p>Patient add falied</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+    
+        <div class="main-container">
+        <form action="#" method="post">
+            <p><strong>Note: use semi-colon (;) at end of each statement to separate lines *</strong></p>
+
+            <div class="input-wrapper">
+                <label>Samples *</label>
+                <input type="text" name="text_sampleno" placeholder="enter sample no...">
+               </div>
+
+           <div class="input-wrapper">
+            <label>Samples *</label>
+            <textarea  name="samle-list" placeholder="Specify tests to be conducted by lab tech etc..."></textarea>
+           </div>
+
+           <div class="input-wrapper">
+            <label>Tests *</label>
+            <textarea name="text_test" placeholder="Specify the samples to be collected e.g blood, urine etc..."></textarea>
+           </div>
+
+           <div class="input-wrapper">
+            <label>Tests Results *</label>
+            <textarea name="test_result" placeholder="Specify the samples to be collected e.g blood, urine etc..."></textarea>
+           </div>
+
+           <div class="input-wrapper">
+            <label>Other Additional details</label>
+            <textarea name="text_info" placeholder="Any other additional info here..."></textarea>
+           </div>
+         
+           <div class="btn-wrapper">
+            <button class="save-btn"><i class="fa-solid fa-plus"></i>Save Changes</button>
+           </div>
+          </form>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section id="Edit-pat-labtest-card">
+        <div class="field-form">
+        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+        <h2>Add Laboratory Test</h2>
+        <div class="message-dis">
+          <p>Patient add successfully</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+    
+        <div class="message-dis-err">
+          <p>Patient add falied</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+    
+        <div class="main-container">
+        <form action="#" method="post">
+            <p><strong>Note: use semi-colon (;) at end of each statement to separate lines *</strong></p>
+
+            <div class="input-wrapper">
+                <label>Samples *</label>
+                <input type="text" name="text_sampleno" placeholder="enter sample no...">
+               </div>
+
+           <div class="input-wrapper">
+            <label>Samples *</label>
+            <textarea  name="samle-list" placeholder="Specify tests to be conducted by lab tech etc..."></textarea>
+           </div>
+
+           <div class="input-wrapper">
+            <label>Tests *</label>
+            <textarea name="text_test" placeholder="Specify the samples to be collected e.g blood, urine etc..."></textarea>
+           </div>
+
+           <div class="input-wrapper">
+            <label>Tests Results *</label>
+            <textarea name="test_result" placeholder="Specify the samples to be collected e.g blood, urine etc..."></textarea>
+           </div>
+
+           <div class="input-wrapper">
+            <label>Other Additional details</label>
+            <textarea name="text_info" placeholder="Any other additional info here..."></textarea>
+           </div>
+         
+           <div class="btn-wrapper">
+            <button class="save-btn"><i class="fa-solid fa-plus"></i>Save Changes</button>
+           </div>
+          </form>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="View-lab-card-inco">
+        <div class="field-form">
+        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+        <h2>View Lab Test Order Details</h2>    
+        <div class="main-container">
+          <div id="discharge">
+            <div class="main-head">
+              <h1>Patient lab Test Order</h1>
+            </div>
+           <div class="patient-overview">
+             <label><h3>Doctor.:</h3><span>johye</span></label>
+             <label><strong>Request Date:</strong><span>2023-04-05 at 15:04:05</span></label>
+           </div>
+           <div class="det-discharge">
+             <label><strong>Samples List to Collected</strong></label>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+              officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+              ostrum reiciendis? Beatae temporibus, 
+              et nihil deleniti provident iure itaque fuga saepe.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                ostrum reiciendis? Beatae temporibus, 
+                et nihil deleniti provident iure itaque fuga saepe.</p>
+           </div>
+
+           <div class="det-discharge">
+            <label><strong>Tests Specifications</strong></label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+             officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+             ostrum reiciendis? Beatae temporibus, 
+             et nihil deleniti provident iure itaque fuga saepe.</p>
+          </div>
+
+          <div class="det-discharge">
+            <label><strong>Other Details</strong></label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+             officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+             ostrum reiciendis? Beatae temporibus, 
+             et nihil deleniti provident iure itaque fuga saepe.</p>
+          </div>
+
+
+          <div id="man-water-mark">
+            <label><small>This system was designed by </small><span>Ospaltic Software Solutions</span></label>
+            <label><small><i class="fa-solid fa-phone"></i>Contact: </small><span>+254742354784, +254736218327</span></label>
+            <label><small><i class="fa-solid fa-envelope"></i>Email: </small><span>ospaltic@gmail.com</span></label>
+            <label><small><i class="fa-solid fa-f"></i>facebook: </small><span>Ospaltic</span></label>
+         </div>
+          </div>
+        </div>
+        </div>
+        </section>
+      
+        <section id="View-lab-card-comp">
+            <div class="field-form">
+            <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+            <h2>View Lab Test Order Details</h2>    
+            <div class="main-container">
+              <div id="discharge-lab-comp">
+                <div class="main-head">
+                  <h1>Patient lab Test Order</h1>
+                </div>
+               <div class="patient-overview">
+                 <label><h3>Doctor.:</h3><span>johye</span></label>
+                 <label><strong>Request Date:</strong><span>2023-04-05 at 15:04:05</span></label>
+               </div>
+               <div class="det-discharge">
+                 <label><strong>Samples List to Collected</strong></label>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                  officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                  ostrum reiciendis? Beatae temporibus, 
+                  et nihil deleniti provident iure itaque fuga saepe.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                    officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                    ostrum reiciendis? Beatae temporibus, 
+                    et nihil deleniti provident iure itaque fuga saepe.</p>
+               </div>
+    
+               <div class="det-discharge">
+                <label><strong>Tests Specifications</strong></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.</p>
+              </div>
+    
+              <div class="det-discharge">
+                <label><strong>Other Details</strong></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.</p>
+              </div>
+            
+              <div class="main-head">
+                <h1>Patient lab Test Results</h1>
+              </div>
+
+              <div class="patient-overview">
+                <label><h3>Lab Tech:</h3><span>johye</span></label>
+                <label><strong>Return Date:</strong><span>2023-04-05 at 15:04:05</span></label>
+                <label><h3>Sample No:</h3><span>774758</span></label>
+              </div>
+      
+              <div class="det-discharge">
+                <label><strong>Samples Collected</strong></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.</p>
+              </div>
+
+              <div class="det-discharge">
+                <label><strong>Tests Done</strong></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.</p>
+              </div>
+
+              <div class="det-discharge">
+                <label><strong>Test Results</strong></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.</p>
+              </div>
+
+              <div class="det-discharge">
+                <label><strong>Other Details</strong></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum 
+                 officiis vel aliquid dolorum cumque explicabo assumenda aliquam officia n
+                 ostrum reiciendis? Beatae temporibus, 
+                 et nihil deleniti provident iure itaque fuga saepe..</p>
+              </div>
+
+
+    
+              <div id="man-water-mark">
+                <label><small>This system was designed by </small><span>Ospaltic Software Solutions</span></label>
+                <label><small><i class="fa-solid fa-phone"></i>Contact: </small><span>+254742354784, +254736218327</span></label>
+                <label><small><i class="fa-solid fa-envelope"></i>Email: </small><span>ospaltic@gmail.com</span></label>
+                <label><small><i class="fa-solid fa-f"></i>facebook: </small><span>Ospaltic</span></label>
+             </div>
+              </div>
+            </div>
+            <div class="btn-opp">
+                <button onclick="printDischargeLab()"><i class="fa-solid fa-print"></i> Print Details</button>
+            </div>
+            </div>
+            </section>
+        
+
+
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>Laboratory Section</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a>
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div>
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href="" class="active"><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-file"></i><span>Departments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+            <section id="main-content">
+
+             <section id="top-overview">
+            <div class="user-det-greet">
+                <section id="gretting-sec">
+                    <h1><span class="first-sec">Hello,  </span><span class="last-sec">Dismas Wanyala</span></h1>
+                    <p>Here are some important task to be done.
+                      Manage Patients Lab tests from your Dashboard. Make Sure to Assign Sample numbers to Sample Collected.
+                    </p>
+                    <button>View Profile</button>
+             </section>
+            </div>
+
+            <div class="card-stats">
+                <div class="cards">
+                    <div class="card-single">
+                     <div>
+                        <h1>54</h1>
+                        <span>Incoming Lab Test Orders</span>
+                     </div>
+                     <div>
+                        <span class="fa-solid fa-users"></span> 
+                     </div>
+                    </div> 
+                    
+          
+                    <div class="card-single">
+                        <div>
+                           <h1>54</h1>
+                           <span>Completed Lab Tests</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-hospital-user"></span> 
+                        </div>
+                       </div> 
+          
+                       <div class="card-single">
+                        <div>
+                           <h1>79</h1>
+                           <span>Pending Lab test Order</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-clipboard-question"></span> 
+                        </div>
+                       </div> 
+          
+                       <div class="card-single">
+                        <div>
+                           <h1>124</h1>
+                           <span>Pending Lab test for Previous Days</span>
+                        </div>
+                        <div>
+                           <span class="fa-solid fa-clipboard-question"></span> 
+                        </div>
+                       </div> 
+          
+                </div>
+            </div>
+
+            </section>
+
+
+     <section id="inco-cont">
+            <section class="search-container">
+                <div class="search-input-wrapper">
+                 <input type="search" placeholder="search here...">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                </section>
+
+
+            <div class="incoming-sec">
+                <h4>Incoming Lab Test Order</h4>
+                <div class="incoming-container">
+                   <div class="single-cont">
+                      <div class="left-sec">
+                     <div class="avatar-name">
+                        <i class="fa-solid fa-hospital-user"></i>
+                        <div class="name-reason">
+                            <p><strong>Mandy Wells</strong></p>
+                            <small>Physio therapy</small>
+                        </div>
+                     </div>
+                     <label>Sat 23-04-2023 08:00am - 08:30am</label>
+                      </div>
+                      <div class="right-sec">
+                       <label class="label-1"><i class="fa-solid fa-info-circle"></i>View Details</label>
+                       <label class="label-4"><i class="fa-solid fa-times-circle"></i>Cancel</label>
+                       <label class="label-2"><i class="fa-solid fa-plus-circle"></i>Add Test & Results</label>
+                       <label class="label-3"><i class="fa-solid fa-ticket"></i> Mark As complete</label>
+                      </div>
+                   </div>
+                </div>
+                </div>
+            </section>
+
+
+ 
+            <section id="comp-cont">
+
+                <section class="search-container">
+                    <div class="search-input-wrapper">
+                     <input type="search" placeholder="search here...">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    </section>
+    
+    
+                <div class="complete-sec">
+                    <h4>Today's Completed Lab Test Order</h4>
+                    <div class="complete-container">
+                       <div class="single-cont">
+                          <div class="left-sec">
+                         <div class="avatar-name">
+                            <i class="fa-solid fa-hospital-user"></i>
+                            <div class="name-reason">
+                                <p><strong>Mandy Wells</strong></p>
+                                <small>Physio therapy</small>
+                            </div>
+                         </div>
+                         <label>Sat 23-04-2023 08:00am - 08:30am</label>
+                          </div>
+                          <div class="right-sec">
+                           <label class="label-1"><i class="fa-solid fa-info-circle"></i>View Details</label>
+                           <label class="label-2"><i class="fa-solid fa-edit"></i>Edit</label>
+                          </div>
+                       </div>
+                    </div>
+                    </div>
+                </section>
+
+              <section id="lab-hist-cont">
+
+                <div id="sys">
+                    <h2>Lab Test History</h2>
+                    </div>
+
+                <section class="search-container">
+                    <div class="search-input-wrapper">
+                     <input type="search" placeholder="search here...">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    </section>
+
+            
+                    <section id="outer-table">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th id="head-1">Patient</th>
+                                        <th id="head-2">HSPT Reg.</th>
+                                        <th id="head-3">Visit id</th>
+                                        <th id="head-4">Sample No.</th>
+                                        <th id="head-5">Date</th>
+                                        <th id="head-6">Added By</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="match-1">Wells bruino</td>
+                                        <td id="match-2">23848488HPT1R</td>
+                                        <td id="match-3">4884848VST1</td>
+                                        <td id="match-4">3</td>
+                                        <td id="match-5">2023-04-05</td>
+                                        <td id="match-6">Hojey</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="match-1">Wells bruino</td>
+                                        <td id="match-2">23848488HPT1R</td>
+                                        <td id="match-3">4884848VST1</td>
+                                        <td id="match-4">3</td>
+                                        <td id="match-5">2023-04-05</td>
+                                        <td id="match-6">Hojey</td>
+                                    <tr>
+                                        <td id="match-1">Wells bruino</td>
+                                        <td id="match-2">23848488HPT1R</td>
+                                        <td id="match-3">4884848VST1</td>
+                                        <td id="match-4">3</td>
+                                        <td id="match-5">2023-04-05</td>
+                                        <td id="match-6">Hojey</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                    
+                                </tfoot>
+                            </table>
+                    
+                            <section id="no-det">
+                              <h3>No Data Available...</h3>
+                            </section>
+                    
+                    
+                        </div>
+                    </section>
+              </section>
+            </section>
+
+
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+
+    $('.incoming-sec .incoming-container .single-cont .right-sec .label-2').click(function(){
+        $('#Add-pat-labtest-card').addClass('active')
+        });
+
+        $('#Add-pat-labtest-card .field-form #canel-field-form').click(function(){
+        $('#Add-pat-labtest-card').removeClass('active')
+        });
+
+
+        $('.incoming-sec .incoming-container .single-cont .right-sec .label-1').click(function(){
+        $('#View-lab-card-inco').addClass('active')
+        });
+
+        $('#View-lab-card-inco .field-form #canel-field-form').click(function(){
+        $('#View-lab-card-inco').removeClass('active')
+        });
+
+        $('.complete-sec .complete-container .single-cont .right-sec .label-2').click(function(){
+        $('#Edit-pat-labtest-card').addClass('active')
+        });
+
+        $('#Edit-pat-labtest-card .field-form #canel-field-form').click(function(){
+        $('#Edit-pat-labtest-card').removeClass('active')
+        });
+
+        $('.complete-sec .complete-container .single-cont .right-sec .label-1').click(function(){
+        $('#View-lab-card-comp').addClass('active')
+        });
+
+        $('#View-lab-card-comp .field-form #canel-field-form').click(function(){
+        $('#View-lab-card-comp').removeClass('active')
+        });
+
+
+        $('#outer-table .table-container table tbody tr').click(function(){
+        $('#View-lab-card-comp').addClass('active')
+        });
+        
+    </script>
+
+<script type="text/javascript">
+
+    function printDischargeLab(){
+      window.print();
+  }
+
+   </script>
+
+</body>
+</html>

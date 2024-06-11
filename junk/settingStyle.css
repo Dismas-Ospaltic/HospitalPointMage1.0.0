@@ -1,0 +1,487 @@
+:root{
+   
+    --main-color: royalblue;
+    --secondary-color:orangered;
+    --green: #27ae60;
+    --black: #333;
+    --white: #fff;
+    --light-bg-color: #f2f3f5;
+    --border-color: #e5e8ec;
+    /* --navyBlue: rgba(0, 0, 128, 50%); */
+    --navyBlue: rgba(0, 0, 119, 0.8);
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+    --coolor: #6ea1e9;
+    --blueViolet: blueviolet;
+    --beautiful: #6e25f5;
+    /* color: rgb(9, 240, 163) */
+}
+
+#profile-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#profile-sec .user-pro{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 50%;
+}
+
+#profile-sec .user-pro .icon-header{
+    display: flex;
+    align-items: baseline;
+}
+#profile-sec .user-pro .icon-header i{
+    font-size: 2rem;
+    color: var(--white);
+    padding: .5rem;
+    background: var(--navyBlue);
+    border-radius: 5px;
+}
+#profile-sec .user-pro .icon-header h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--navyBlue);
+}
+#profile-sec .user-pro .list-det{
+   display: flex; 
+   flex-direction: column;
+}
+#profile-sec .user-pro .list-det label strong{
+   color: var(--coolor); 
+}
+#profile-sec .user-pro .list-det label span{
+    color: var(--text-grey);
+    padding-left: .3rem;
+}
+.btn-opps{
+    display: flex;
+}
+.btn-opps button{
+    padding: .5rem 1rem;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-opps button:hover{
+    opacity: .7;
+}
+.btn-opps .btn-edit{
+ background: var(--green);
+ margin: .5rem;
+}
+.btn-opps .btn-change{
+    background: crimson;
+    margin: .5rem;
+}
+
+/* facility */
+#profile-sec .facility-pro{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 45%;
+}
+#profile-sec .facility-pro .icon-header{
+    display: flex;
+    align-items: baseline;
+}
+#profile-sec .facility-pro .icon-header i{
+    font-size: 2rem;
+    color: var(--white);
+    padding: .5rem;
+    background: var(--navyBlue);
+    border-radius: 5px;
+}
+#profile-sec .facility-pro .icon-header h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--navyBlue);
+}
+#profile-sec .facility-pro .list-det{
+   display: flex; 
+   flex-direction: column;
+}
+
+#profile-sec .facility-pro .list-det label strong{
+    color: var(--coolor); 
+ }
+ #profile-sec .facility-pro .list-det label span{
+     color: var(--text-grey);
+     padding-left: .3rem;
+ }
+ .btn-opps{
+     display: flex;
+ }
+ .btn-opps button{
+     padding: .5rem 1rem;
+     color: var(--white);
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ .btn-opps button:hover{
+     opacity: .7;
+ }
+ .btn-opps .btn-add-facility{
+  background: var(--main-color);
+  margin: .5rem;
+ }
+ .btn-opps .btn-edit-facility{
+     background: chocolate;
+     margin: .5rem;
+ }
+ .not-data-sec{
+width: fit-content;
+margin: 0 auto;
+padding: .5rem;
+background: var(--text-grey);
+color: var(--main-color);
+border-radius: 20px;
+ }
+
+ .security-quiz{
+    background: var(--white);
+    padding: .5rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--navyBlue);
+ }
+ .security-quiz label{
+    display: flex;
+    align-items: baseline;
+    color: var(--navyBlue);
+ }
+ .security-quiz label i{
+    font-size: 1.2rem;
+   
+ }
+ .security-quiz label span{
+    padding-left: .5rem;
+ }
+ .security-quiz .select-cont .wrapp-cont-security{
+ display: flex;
+ border: 1px solid var(--navyBlue);
+ border-radius: 5px;
+ width: 50%;
+ overflow: hidden;
+ margin-top: .2rem;
+ }
+ .security-quiz .select-cont .wrapp-cont-security input,
+ .security-quiz .select-cont .wrapp-cont-security select{
+ width: 100%;
+ height: 100%;
+ font-size: 1.2rem;
+ }
+ .btn-cont-opps button{
+    padding: .3rem .8rem;
+    color: var(--white);
+    margin-top: .3rem;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .btn-cont-opps button:hover{
+    opacity: .7;
+ }
+ .btn-add-answer{
+    background: var(--navyBlue);
+ }
+ /* backup option style */
+ #data-backup{
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--navyBlue);
+    padding: .5rem;
+    margin-top: 10px;
+ }
+ #data-backup .header-sec{
+ display: flex;
+ align-items: baseline;
+ }
+ #data-backup .header-sec i{
+    font-size: 1.5rem;
+    color: var(--navyBlue);
+ }
+ #data-backup .header-sec h3{
+    padding-left: .5rem;
+    color: var(--color-dark);
+ }
+ #data-backup .two-opt{
+    display: flex;
+    align-items: center;
+ }
+ #data-backup .two-opt .opt-2 .det-btn,
+ #data-backup .two-opt .opt-1 .det-btn{
+  display: flex;
+ }
+ #data-backup .two-opt .opt-2 .det-btn button,
+ #data-backup .two-opt .opt-1 .det-btn button{
+    padding: .3rem .5rem;
+    color: var(--white);
+    border-radius: 5px;
+    margin: .3rem;
+    cursor: pointer;
+ }
+ #data-backup .two-opt .opt-2 .det-btn button:hover,
+ #data-backup .two-opt .opt-1 .det-btn button:hover{
+ opacity: .7;
+ }
+ #data-backup .two-opt .opt-2 .det-btn .btn-opt-1,
+ #data-backup .two-opt .opt-1 .det-btn .btn-opt-1{
+    background: var(--green);
+ }
+ #data-backup .two-opt .opt-2 .det-btn .btn-opt-2,
+ #data-backup .two-opt .opt-1 .det-btn .btn-opt-2{
+    background: var(--navyBlue);
+    
+ }
+
+ #data-backup .two-opt .opt-2{
+   margin-left: 1rem;
+   }
+   #online-data-backup-card,
+   #ofline-data-backup-card{
+    background: rgba(65,105,255, 0.3);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    margin: auto;
+    display: none;
+   }
+   #Online-backup-card,
+   #Offline-backup-card,
+   #Security-card,
+   #update-biz-profile-card,
+   #add-biz-profile-card,
+   #update-passkey-card,
+   #update-profile-card{
+   background: rgba(65,105,255, 0.3);
+   padding: 1rem;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 99999;
+   margin: auto;
+   display: none;
+   }
+   #Online-backup-card.active,
+   #Offline-backup-card.active,
+   #Security-card.active,
+   #update-biz-profile-card.active,
+   #add-biz-profile-card.active,
+   #update-passkey-card.active,
+   #update-profile-card.active{
+   display: initial;
+   }
+   #Online-backup-card .field-form,
+   #Offline-backup-card .field-form{
+    width: 50%;
+    background-color: var(--navyBlue);
+    margin: 0 auto;
+    padding: .1rem;
+    border-radius: 10px;
+   }
+   #online-data-backup-card .field-form,
+   #ofline-data-backup-card .field-form{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: fit-content; 
+    width: 200px;
+    background-color: var(--white);
+    margin: auto;
+    padding: .1rem;
+    border-radius: 10px;
+   }
+   #Security-card .field-form,
+   #update-biz-profile-card .field-form,
+   #add-biz-profile-card .field-form,
+   #update-passkey-card .field-form,
+   #update-profile-card .field-form{
+   width: 50%;
+   background-color: var(--white);
+   margin: 0 auto;
+   padding: .1rem;
+   border-radius: 10px;
+   }
+   #Online-backup-card .field-form #canel-field-form,
+   #Offline-backup-card .field-form #canel-field-form,
+   #Security-card .field-form #canel-field-form,
+   #update-biz-profile-card .field-form #canel-field-form,
+   #add-biz-profile-card .field-form #canel-field-form,
+   #update-passkey-card .field-form #canel-field-form,
+   #update-profile-card .field-form #canel-field-form{
+   float: right;
+   padding: .6rem;
+   border-radius: 10px;
+   }
+   #Online-backup-card .field-form #canel-field-form:hover,
+   #Offline-backup-card .field-form #canel-field-form:hover,
+   #Security-card .field-form #canel-field-form:hover,
+   #update-biz-profile-card .field-form #canel-field-form:hover,
+   #add-biz-profile-card .field-form #canel-field-form:hover,
+   #update-passkey-card .field-form #canel-field-form:hover,
+   #update-profile-card .field-form #canel-field-form:hover{
+     background: var(--border-color);
+   }
+   #Online-backup-card .field-form h2,
+   #Offline-backup-card .field-form h2,
+   #Security-card .field-form h2,
+   #update-biz-profile-card .field-form h2,
+   #add-biz-profile-card .field-form h2,
+   #update-passkey-card .field-form h2,
+   #update-profile-card .field-form h2{
+   margin-top: 1rem;
+     color: var(--main-color);
+     text-align: center;
+   }
+   #Online-backup-card .field-form .main-container,
+   #Offline-backup-card .field-form .main-container,
+   #Security-card .field-form .main-container,
+   #update-biz-profile-card .field-form .main-container,
+   #add-biz-profile-card .field-form .main-container,
+   #update-passkey-card .field-form .main-container,
+   #update-profile-card .field-form .main-container{
+   width: 100%;
+   overflow-y: auto;
+   max-height: 550px;
+   padding: 1rem;
+   }
+   #online-data-backup-card .field-form .main-container .loader-img img,
+   #ofline-data-backup-card .field-form .main-container .loader-img img{
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+   }
+
+   .field-form .input-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .field-form .input-wrapper select,
+  .field-form .input-wrapper input{
+      padding: .2rem;
+      border: 1px solid var(--text-grey);
+      width: 100%;
+      height: 100%;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      background: var(--light-bg-color);
+      color: var(--green);
+  }
+  .field-form .input-wrapper label{
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  }
+  .btn-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .btn-wrapper button{
+  padding: .5rem 1rem;
+  color: var(--white);
+  border-radius: 5px;
+  }
+  .btn-save-update{
+  background: var(--green);
+  }
+
+  .message-dis{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px var(--green);
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 90%;
+    padding: .2rem;
+    margin-bottom: 5px;
+    }
+    .message-dis.active{
+      display: none;
+      }
+      .message-dis p{
+        color: var(--green);
+        font-size: 1.2rem;
+      }
+      .message-dis label i{
+      font-size: 1.2rem;
+      color: var(--green);
+      }
+         
+      .message-dis-err{
+          display: none;
+          align-items: center;
+          justify-content: space-between;
+          box-shadow: 0px 0px 15px crimson;
+          border-radius: 5px;
+          margin: 0 auto;
+          width: 90%;
+          padding: .2rem;
+          margin-bottom: 5px;
+          }
+          .message-dis-err.active{
+              display: none;
+              }
+              .message-dis-err p{
+                color: crimson;
+                font-size: 1.2rem;
+              }
+              .message-dis-err label i{
+              font-size: 1.2rem;
+              color: crimson;
+              }
+
+
+              /* backup det style */
+   .backup-det-cont p{
+    color: var(--white);
+   }
+  #quiz{
+    color: var(--white);
+    font-size: 1.4rem;
+    background: var(--navyBlue);
+    padding: .3rem;
+  }
+
+
+   @media(max-width: 720px){
+
+    #profile-sec{
+   flex-direction: column;
+    }
+ 
+    #profile-sec .user-pro{
+        width: 100%;
+    }
+
+    #profile-sec .facility-pro{
+ 
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #data-backup .two-opt{
+     flex-direction: column;
+     align-items: flex-start;
+
+     }
+     #data-backup .two-opt .opt-2{
+        margin-left: 0rem;
+        }
+
+   }

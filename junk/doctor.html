@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="doctorpStyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body>
+
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>Doctor's Panel</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a>
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div>
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href="" class="active"><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-file"></i><span>Departments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+            <section id="main-content">
+
+         <section id="gretting-sec">
+                <h1><span class="first-sec">Hello Dr.  </span><span class="last-sec">Dismas Wanyala</span></h1>
+                <p>Here are some important task to be done.
+                  Manage Patients from your Dashboard.
+                </p>
+                <button>View Profile</button>
+         </section>
+
+           <section id="overview-det">
+         
+            <div class="doc-repo-cards">
+                <div class="single-repo-card">
+                <i class="fa-solid fa-hospital-user"></i>
+                <p>Incoming patients</p>
+                <label>300</label>
+                </div> 
+                   
+                <div class="single-repo-card">
+                 <i class="fa-solid fa-hospital-user"></i>
+                 <p>Incoming Lab Results</p>
+                 <label>300</label>
+                 </div>
+           
+           
+                 <div class="single-repo-card">
+                   <i class="fa-solid fa-clipboard-check"></i>
+                   <p>Appointments</p>
+                   <label>300</label>
+                   </div>
+           
+                   <div class="single-repo-card">
+                     <i class="fa-solid fa-message"></i>
+                     <p>Unread Messages</p>
+                     <label>300</label>
+                     </div>
+                    </div>
+           </section>
+
+           <div id="sys">
+            <h2>Incoming Patients</h2>
+            </div>
+
+            <section class="search-container">
+                <div class="search-input-wrapper">
+                 <input type="search" placeholder="search here...">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                </section>
+
+           <section id="outer-table">
+            <div class="table-container inco-patient">
+
+               <div class="main-container-table">
+                <div id="head-det">
+               <div class="head-1">
+                <p><strong>Name</strong></p>
+               </div>
+               <div class="head-2">
+                <p><strong>IDP /ODP No</strong></p>
+               </div>
+               <div class="head-3">
+                <p><strong>HPT No</strong></p>
+               </div>
+               <div class="head-4">
+                <p><strong>Visit Reason</strong></p>
+               </div>
+               <div class="head-5">
+                <p><strong>Urgency</strong></p>
+               </div>
+               <div class="head-6">
+                <p><strong>Visit Time</strong></p>
+               </div>
+               <div class="head-7">
+                <p><strong>Sent By</strong></p>
+               </div>
+                </div>
+
+
+
+                <div class="body-det">
+                  <div class="bdy match-1">
+                   <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                  </div>
+                  <div class="bdy match-2">
+                   <p>Name dddddddddddd ddddddddddd</p>
+                  </div>
+                  <div class="bdy match-3">
+                   <p>Name ssssssssssssssssss rer e</p>
+                  </div>
+                  <div class="bdy match-4">
+                   <p>Name ddffffffffff</p>
+                  </div>
+                  <div class="bdy match-5">
+                   <p>Name fffffffffffffff</p>
+                  </div>
+                  <div class="bdy match-6">
+                   <p>Name dsddd ddddddddddddddd</p>
+                  </div>
+                  <div class="bdy match-7">
+                   <p>Name wsssssssssssssss dddddddddddd</p>
+                  </div>
+                   </div>
+              
+
+               <div class="body-det">
+                <div class="bdy match-1">
+                    <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                   </div>
+                   <div class="bdy match-2">
+                    <p>Name dddddddddddd ddddddddddd</p>
+                   </div>
+                   <div class="bdy match-3">
+                    <p>Name ssssssssssssssssss rer e</p>
+                   </div>
+                   <div class="bdy match-4">
+                    <p>Name ddffffffffff</p>
+                   </div>
+                   <div class="bdy match-5">
+                    <p>Name fffffffffffffff</p>
+                   </div>
+                   <div class="bdy match-6">
+                    <p>Name dsddd ddddddddddddddd</p>
+                   </div>
+                   <div class="bdy match-7">
+                    <p>Name wsssssssssssssss dddddddddddd</p>
+                   </div>
+                 </div>
+           
+
+             <div class="body-det">
+                <div class="bdy match-1">
+                    <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                   </div>
+                   <div class="bdy match-2">
+                    <p>Name dddddddddddd ddddddddddd</p>
+                   </div>
+                   <div class="bdy match-3">
+                    <p>Name ssssssssssssssssss rer e</p>
+                   </div>
+                   <div class="bdy match-4">
+                    <p>Name ddffffffffff</p>
+                   </div>
+                   <div class="bdy match-5">
+                    <p>Name fffffffffffffff</p>
+                   </div>
+                   <div class="bdy match-6">
+                    <p>Name dsddd ddddddddddddddd</p>
+                   </div>
+                   <div class="bdy match-7">
+                    <p>Name wsssssssssssssss dddddddddddd</p>
+                   </div>
+               </div>
+          
+                
+        
+                <section id="no-det">
+                  <h3>No Data Available...</h3>
+                </section>
+              </div>
+        
+            </div>
+        </section>
+
+
+
+        <div id="sys">
+          <h2>Incoming Lab Test Results</h2>
+          </div>
+
+          <section class="search-container">
+              <div class="search-input-wrapper">
+               <input type="search" placeholder="search here...">
+               <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              </section>
+
+         <section id="outer-table">
+          <div class="table-container inco-Lab">
+
+             <div class="main-container-table">
+              <div id="head-det">
+             <div class="head-L11">
+              <p><strong>Name</strong></p>
+             </div>
+             <div class="head-L22">
+              <p><strong>HPT No</strong></p>
+             </div>
+             <div class="head-L33">
+              <p><strong>Visit Id</strong></p>
+             </div>
+             <div class="head-L44">
+              <p><strong>Return Time</strong></p>
+             </div>
+             <div class="head-L55">
+              <p><strong>Sample No.</strong></p>
+             </div>
+              </div>
+
+
+
+              <div class="body-det">
+                <div class="bdy match-L11">
+                  <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                 </div>
+                 <div class="bdy match-L22">
+                  <p>Name dddddddddddd ddddddddddd</p>
+                 </div>
+                 <div class="bdy match-L33">
+                  <p>Name ssssssssssssssssss rer e</p>
+                 </div>
+                 <div class="bdy match-L44">
+                  <p>Name ddffffffffff</p>
+                 </div>
+                 <div class="bdy match-L55">
+                  <p>Name fffffffffffffff</p>
+                 </div>
+                 </div>
+            
+
+             <div class="body-det">
+              <div class="bdy match-L11">
+                <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+               </div>
+               <div class="bdy match-L22">
+                <p>Name dddddddddddd ddddddddddd</p>
+               </div>
+               <div class="bdy match-L33">
+                <p>Name ssssssssssssssssss rer e</p>
+               </div>
+               <div class="bdy match-L44">
+                <p>Name ddffffffffff</p>
+               </div>
+               <div class="bdy match-L55">
+                <p>Name fffffffffffffff</p>
+               </div>
+               </div>
+         
+
+           <div class="body-det">
+            <div class="bdy match-L11">
+              <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+             </div>
+             <div class="bdy match-L22">
+              <p>Name dddddddddddd ddddddddddd</p>
+             </div>
+             <div class="bdy match-L33">
+              <p>Name ssssssssssssssssss rer e</p>
+             </div>
+             <div class="bdy match-L44">
+              <p>Name ddffffffffff</p>
+             </div>
+             <div class="bdy match-L55">
+              <p>Name fffffffffffffff</p>
+             </div>
+             </div>
+        
+              
+      
+              <section id="no-det">
+                <h3>No Data Available...</h3>
+              </section>
+            </div>
+      
+          </div>
+      </section>
+
+ 
+
+        <section id="appointment-recent">
+        <div class="appointment-sec">
+        <h4>Upcomming Appontments</h4>
+        <div class="appointment-container">
+           <div class="single-cont">
+              <div class="left-sec">
+             <div class="avatar-name">
+                <i class="fa-solid fa-hospital-user"></i>
+                <div class="name-reason">
+                    <p><strong>Mandy Wells</strong></p>
+                    <small>Physio therapy</small>
+                </div>
+             </div>
+             <label>Sat 23-04-2023 08:00am - 08:30am</label>
+              </div>
+              <div class="right-sec">
+               <label class="label-1"><i class="fa-solid fa-times-circle"></i>Cancel</label>
+               <label class="label-2"><i class="fa-solid fa-clock"></i>Reschedule</label>
+               <label class="label-3"><i class="fa-solid fa-ticket"></i> Mark As complete</label>
+              </div>
+           </div>
+        </div>
+        </div>
+
+        <div class="recent-sec">
+        <h4>Recent Patients</h4>
+        <div class="recent-container">
+               
+
+            <div class="main-container-table-recent">
+                <div id="head-det">
+               <div class="head-11">
+                <p><strong>Name</strong></p>
+               </div>
+               <!-- <div class="head-22">
+                <p><strong>IDP /ODP No</strong></p>
+               </div> -->
+               <div class="head-33">
+                <p><strong>HPT No</strong></p>
+               </div>
+            </div>
+
+
+
+                <div class="body-det">
+                    <div class="bdy match-11">
+                        <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                       </div>
+                       <!-- <div class="bdy match-22">
+                        <p>Name dddddddddddd ddddddddddd</p>
+                       </div> -->
+                       <div class="bdy match-33">
+                        <p>Name ssssssssssssssssss rer e</p>
+                       </div>
+                   </div>
+              
+    
+                   <div class="body-det">
+                    <div class="bdy match-11">
+                        <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                       </div>
+                       <!-- <div class="bdy match-22">
+                        <p>Name dddddddddddd ddddddddddd</p>
+                       </div> -->
+                       <div class="bdy match-33">
+                        <p>Name ssssssssssssssssss rer e</p>
+                       </div>
+                   </div>
+           
+
+                   <div class="body-det">
+                    <div class="bdy match-11">
+                        <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                       </div>
+                       <!-- <div class="bdy match-22">
+                        <p>Name dddddddddddd ddddddddddd</p>
+                       </div> -->
+                       <div class="bdy match-33">
+                        <p>Name ssssssssssssssssss rer e</p>
+                       </div>
+                   </div>
+               
+                
+        
+                <section id="no-det">
+                  <h3>No Data Available...</h3>
+                </section>
+              </div>
+
+
+
+        </div>
+        </div>
+        </section>
+    
+
+        <section class="search-container">
+          <div class="search-input-wrapper">
+           <input type="search" placeholder="search here...">
+           <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div class="other-sort">
+          <div class="select-wrapper">
+          <label>Sort By</label>
+          <select>
+           <option value="Default">Default</option>
+           <option value="Date">Date</option>
+           <option value="Gender">Gender</option>
+           <option value="Age">Age</option>
+          </select>
+          </div>
+          </div>
+          </section>
+
+          <div id="sys">
+           <h2>All patients in the System</h2>
+           </div>
+
+          <section id="outer-table">
+           <div class="table-container">
+
+              <div class="main-container-table">
+               <div id="head-det">
+              <div class="head-1ap">
+               <p><strong>Name</strong></p>
+              </div>
+              <div class="head-2ap">
+               <p><strong>IDP /ODP No</strong></p>
+              </div>
+              <div class="head-3ap">
+               <p><strong>HPT No</strong></p>
+              </div>
+              <div class="head-4ap">
+               <p><strong>National Id</strong></p>
+              </div>
+              <div class="head-5ap">
+               <p><strong>Contact</strong></p>
+              </div>
+              <div class="head-6ap">
+               <p><strong>Residence</strong></p>
+              </div>
+              <div class="head-7ap">
+               <p><strong>Added On</strong></p>
+              </div>
+              <div class="head-8ap">
+               <p><strong>Added By</strong></p>
+              </div>
+               </div>
+
+
+
+               <div class="body-det">
+                <div class="bdy match-1ap">
+                 <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                </div>
+                <div class="bdy match-2ap">
+                 <p>Name dddddddddddd ddddddddddd</p>
+                </div>
+                <div class="bdy match-3ap">
+                 <p>Name ssssssssssssssssss rer e</p>
+                </div>
+                <div class="bdy match-4ap">
+                 <p>Name ddffffffffff</p>
+                </div>
+                <div class="bdy match-5ap">
+                 <p>Name fffffffffffffff</p>
+                </div>
+                <div class="bdy match-6ap">
+                 <p>Name dsddd ddddddddddddddd</p>
+                </div>
+                <div class="bdy match-7ap">
+                 <p>Name wsssssssssssssss dddddddddddd</p>
+                </div>
+                <div class="bdy match-8ap">
+                 <p>Namefffffffffffffffdddddddddddd dddddddddddddddd</p>
+                </div>
+                 </div>
+             
+
+                  <div class="body-det">
+                    <div class="bdy match-1ap">
+                     <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                    </div>
+                    <div class="bdy match-2ap">
+                     <p>Name dddddddddddd ddddddddddd</p>
+                    </div>
+                    <div class="bdy match-3ap">
+                     <p>Name ssssssssssssssssss rer e</p>
+                    </div>
+                    <div class="bdy match-4ap">
+                     <p>Name ddffffffffff</p>
+                    </div>
+                    <div class="bdy match-5ap">
+                     <p>Name fffffffffffffff</p>
+                    </div>
+                    <div class="bdy match-6ap">
+                     <p>Name dsddd ddddddddddddddd</p>
+                    </div>
+                    <div class="bdy match-7ap">
+                     <p>Name wsssssssssssssss dddddddddddd</p>
+                    </div>
+                    <div class="bdy match-8ap">
+                     <p>Namefffffffffffffffdddddddddddd dddddddddddddddd</p>
+                    </div>
+                     </div>
+          
+
+            <div class="body-det">
+             <div class="bdy match-1ap">
+              <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+             </div>
+             <div class="bdy match-2ap">
+              <p>Name dddddddddddd ddddddddddd</p>
+             </div>
+             <div class="bdy match-3ap">
+              <p>Name ssssssssssssssssss rer e</p>
+             </div>
+             <div class="bdy match-4ap">
+              <p>Name ddffffffffff</p>
+             </div>
+             <div class="bdy match-5ap">
+              <p>Name fffffffffffffff</p>
+             </div>
+             <div class="bdy match-6ap">
+              <p>Name dsddd ddddddddddddddd</p>
+             </div>
+             <div class="bdy match-7ap">
+              <p>Name wsssssssssssssss dddddddddddd</p>
+             </div>
+             <div class="bdy match-8ap">
+              <p>Namefffffffffffffffdddddddddddd dddddddddddddddd</p>
+             </div>
+              </div>
+         
+               
+       
+               <section id="no-det">
+                 <h3>No Data Available...</h3>
+               </section>
+             </div>
+       
+           </div>
+       </section>
+            </section>
+
+
+
+
+
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+    </script>
+
+</body>
+</html>

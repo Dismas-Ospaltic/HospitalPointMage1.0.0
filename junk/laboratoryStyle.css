@@ -1,0 +1,526 @@
+:root{
+   
+    --main-color: royalblue;
+    --secondary-color:orangered;
+    --green: #27ae60;
+    --black: #333;
+    --white: #fff;
+    --light-bg-color: #f2f3f5;
+    --border-color: #e5e8ec;
+   
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+    --coolor: #6ea1e9;
+    --blueViolet: blueviolet;
+    --beautiful: #6e25f5;
+    /* color: rgb(9, 240, 163) */
+} 
+body{
+    background-image: url(resources/img/doct1.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+#top-overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-overview .user-det-greet{
+ width: 30%;
+} 
+#top-overview .card-stats{
+    width: 65%;
+   }   
+   #gretting-sec{
+    background: var(--white);
+    padding: .4rem;
+    }
+    #gretting-sec h1 .first-sec{
+      color: var(--main-color);
+    }
+    #gretting-sec h1 .last-sec{
+      color: crimson;
+    }
+    #gretting-sec button{
+      padding: .3rem .7rem;
+      color: var(--white);
+     background: crimson;
+     border-radius: 5px;
+    }
+/* cards stylings */
+#top-overview .card-stats .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-gap:.5rem;
+        margin-top: .2rem;
+    }
+    #top-overview .card-stats .cards .card-single{
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
+        border-radius: 2px;
+    }
+    #top-overview .card-stats .cards .card-single div:last-child span{
+        font-size: 2rem;
+        color: var(--main-color);
+     }
+     #top-overview .card-stats .cards .card-single div:first-child span{
+        color: var(--text-grey);
+     }
+     #top-overview .card-stats .cards .card-single:last-child {    
+        background: var(--main-color);
+     }
+     #top-overview .card-stats .cards .card-single:last-child h1,
+     #top-overview .card-stats .cards .card-single:last-child div:last-child span,
+     #top-overview .card-stats .cards .card-single:last-child div:first-child span{
+       color: #fff;
+    }
+
+
+    #comp-cont,
+    #inco-cont{
+        margin-top: 20px;
+    }
+    .complete-sec h4,
+    .incoming-sec h4{
+   padding: .5rem;
+   border-radius: 10px;
+   color: whitesmoke;
+   background: var(--color-dark);
+   width: fit-content;
+    }
+    .complete-sec,
+    .incoming-sec{
+        width: 100%;
+        background: var(--white);
+         padding: .5rem;
+         margin-top: 10px;
+        }
+        .complete-container,
+        .incoming-container{
+          max-height: 600px;
+          overflow-y: auto;
+        }
+
+     .single-cont{
+        background: var(--light-bg-color);
+        border: 1px solid var(--main-color);
+        border-radius: 5px;
+        padding: .3rem;
+        margin-top: .5rem;
+        display: flex;
+        justify-content: space-between;
+  
+     }
+     .single-cont .left-sec .avatar-name i{
+     color: var(--main-color);
+     font-size: 1.5rem;
+     }
+     .single-cont .left-sec .name-reason p{
+        color: var(--color-dark);
+        }
+        .single-cont .left-sec .name-reason small{
+            color: var(--main-color);
+        }
+        .single-cont .left-sec label{
+         color: var(--color-dark);
+        }
+     .single-cont .right-sec{
+    display: flex;
+    flex-direction: column;
+     }
+     .single-cont .right-sec label{
+        margin-top: .3rem;
+        cursor: pointer;
+     }
+     .single-cont .right-sec label:hover{
+        background: var(--white);
+     }
+     .single-cont .right-sec .label-4,
+     .single-cont .right-sec .label-1{
+        color: crimson;
+     }
+     .single-cont .right-sec .label-2{
+        color: var(--green);
+        
+     }
+     .single-cont .right-sec .label-3{
+        color: var(--beautiful);
+        
+     }
+     #lab-hist-cont{
+        margin-top: 20px;
+     }
+
+
+
+
+         
+#outer-table{
+    background: var(--white);
+    padding: .3rem;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+  
+  }
+  #outer-table .table-container{
+  width: 100%;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+  /* min-width: 600px; */
+  }
+  
+  #outer-table .table-container table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+     min-width: 600px;
+  }
+  #outer-table .table-container table td{
+   border: 1px solid var(--border-color);
+  }
+  
+  #outer-table .table-container table tbody tr{
+   cursor: pointer;
+  
+  }
+  #outer-table .table-container table tbody tr td{
+  padding: .2rem;
+  }
+  #outer-table .table-container table tbody tr:hover{
+   background: rgba(65,105,255, 0.2);
+  }
+  
+  #head-1{
+   width: 30%;
+  }
+  #head-2{
+    width: 15%;
+  }
+  #head-3{
+    width: 15%;
+  }
+  #head-4{
+    width: 10%;
+  }
+  #head-5{
+    width: 15%;
+  }
+  #head-6{
+    width: 15%;
+  }
+  
+  
+  
+  #match-1{
+    width: 30%;
+  }
+  #match-2{
+    width: 15%;
+  }
+  #match-3{
+    width: 15%;
+  }
+  #match-4{
+    width: 10%;
+  }
+  #match-5{
+    width: 15%;
+  }
+  #match-6{
+    width: 15%;
+    font-size: .8rem;
+    color: var(--main-color);
+  }
+  
+  
+  #sys{
+    margin-top: 10px;
+    }
+    #sys h2{
+    color: var(--color-dark);
+    }
+    #no-det{
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
+    }
+    #no-det h3{
+        color: crimson;
+        text-align: center;
+        padding: .5rem;
+        background: #1D2231;
+      
+        }
+
+/* pop ups */
+#View-lab-card-comp,
+#Edit-pat-labtest-card,
+#View-lab-card-inco,
+#Add-pat-labtest-card{
+  background: rgba(65,105,255, 0.3);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+margin: auto;
+display: none;
+}
+#View-lab-card-comp.active,
+#Edit-pat-labtest-card.active,
+#View-lab-card-inco.active,
+#Add-pat-labtest-card.active{
+  display: initial;
+}
+#View-lab-card-comp .field-form,
+#Edit-pat-labtest-card .field-form,
+#View-lab-card-inco .field-form,
+#Add-pat-labtest-card .field-form{
+  width: 50%;
+  background-color: var(--white);
+  /* background-image: url(resources/img/ste2.jpeg); */
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: .1rem;
+  border-radius: 10px;
+}
+#View-lab-card-comp .field-form #canel-field-form,
+#Edit-pat-labtest-card .field-form #canel-field-form,
+#View-lab-card-inco .field-form #canel-field-form,
+#Add-pat-labtest-card .field-form #canel-field-form{
+  float: right;
+  padding: .6rem;
+  border-radius: 10px;
+}
+#View-lab-card-comp .field-form #canel-field-form:hover,
+#Edit-pat-labtest-card .field-form #canel-field-form:hover,
+#View-lab-card-inco .field-form #canel-field-form:hover,
+#Add-pat-labtest-card .field-form #canel-field-form:hover{
+    background: var(--border-color);
+}
+#View-lab-card-comp .field-form h2,
+#Edit-pat-labtest-card .field-form h2,
+#View-lab-card-inco .field-form h2,
+#Add-pat-labtest-card .field-form h2{
+  margin-top: 1rem;
+    color: var(--main-color);
+    text-align: center;
+}
+#View-lab-card-comp .field-form .main-container,
+#Edit-pat-labtest-card .field-form .main-container,
+#View-lab-card-inco .field-form .main-container,
+#Add-pat-labtest-card .field-form .main-container{
+ width: 100%;
+ overflow-y: auto;
+ max-height: 550px;
+ padding: 1rem;
+}
+.main-par{
+   border: 1px solid var(--main-color);
+}
+
+
+.field-form .input-wrapper{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   margin-top: 10px;
+   width: 100%;
+}
+.field-form .input-wrapper select,
+.field-form .input-wrapper input{
+     padding: .2rem;
+     border: 1px solid var(--text-grey);
+     width: 100%;
+     height: 100%;
+     font-size: 1rem;
+     color: var(--green);
+}
+.field-form .input-wrapper textarea{
+resize: vertical;
+border: 1px solid var(--main-color);
+height: 100px;
+padding: .5rem;
+color: var(--color-dark);
+}
+.field-form .input-wrapper label{
+ font-size: 1rem;
+ color: var(--main-color);
+}
+.btn-wrapper {
+margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn-wrapper .save-btn{
+padding: .5rem 1rem;
+color: var(--white);
+background: var(--main-color);
+border-radius: 5px;
+}
+
+
+
+
+
+.message-dis{
+   display: none;
+   align-items: center;
+   justify-content: space-between;
+   background: var(--white);
+   box-shadow: 0px 0px 15px var(--green);
+   border-radius: 5px;
+   margin: 0 auto;
+   width: 90%;
+   padding: .2rem;
+   }
+   .message-dis.active{
+       display: none;
+       }
+       .message-dis p{
+         color: var(--green);
+         font-size: 1.2rem;
+       }
+       .message-dis label i{
+       font-size: 1.2rem;
+       color: var(--green);
+       }
+   
+       .message-dis-err{
+           display: none;
+           align-items: center;
+           justify-content: space-between;
+           box-shadow: 0px 0px 15px crimson;
+           background: var(--white);
+           border-radius: 5px;
+           margin: 0 auto;
+           width: 90%;
+           padding: .2rem;
+           }
+           .message-dis-err.active{
+               display: none;
+               }
+               .message-dis-err p{
+                 color: crimson;
+                 font-size: 1.2rem;
+               }
+               .message-dis-err label i{
+               font-size: 1.2rem;
+               color: crimson;
+               }
+
+               /* view lab card */
+      /* discharge styling */
+#discharge-lab-comp,
+#discharge{
+    position: relative;
+  }
+  #discharge-lab-comp .main-head,
+  #discharge .main-head{
+   text-align: center;
+   color: lightgreen;
+   background: var(--text-grey);
+   border: 1px dotted var(--color-dark);
+  }
+  #discharge-lab-comp .patient-overview label,
+  #discharge .patient-overview label{
+   display: flex;
+   align-items: baseline;
+  }
+  #discharge-lab-comp .patient-overview label span,
+  #discharge .patient-overview label span{
+    padding-left: .5rem;
+  }
+  #discharge-lab-comp .patient-overview label h3,
+  #discharge-lab-comp .patient-overview label strong,
+  #discharge .patient-overview label h3,
+  #discharge .patient-overview label strong{
+    color: var(--main-color);
+  } 
+  .det-discharge{
+    margin-top: .5rem;
+    padding: .3rem;
+    background: var(--light-bg-color);
+    border: 1px dotted var(--color-dark);
+  }
+  .det-discharge label strong{
+    color: var(--main-color);
+  }
+  #man-water-mark{
+    position: relative;
+    bottom: 0;
+  }
+  #man-water-mark label span{
+    color: var(--main-color);
+  }
+  #man-water-mark label i{
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+  
+  #stamp{
+    margin-top: 20px;
+  }
+  
+
+                  
+   
+   /* @ends */
+
+  
+
+
+    @media(max-width: 720px){
+
+        #top-overview{
+            flex-direction: column;
+        }
+        #top-overview .user-det-greet{
+         width: 100%;
+        } 
+        #top-overview .card-stats{
+            width: 100%;
+           }  
+    }
+
+    
+    .btn-opp button{
+        background: var(--main-color);
+        padding: .5rem 1rem;
+        color: var(--white);
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+
+    @media print{
+        body *{
+            visibility: hidden;
+        }
+        #discharge-lab-comp,  #discharge-lab-comp *{
+        visibility: visible;
+        } 
+        #discharge-lab-comp{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: 0 auto;
+            page-break-inside:avoid;
+        }
+        #man-water-mark{
+            position: fixed;
+            bottom: 0;
+         }
+    }

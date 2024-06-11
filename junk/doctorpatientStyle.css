@@ -1,0 +1,786 @@
+:root{
+   
+   --main-color: royalblue;
+   --secondary-color:orangered;
+   --green: #27ae60;
+   --black: #333;
+   --white: #fff;
+   --light-bg-color: #f2f3f5;
+   --border-color: #e5e8ec;
+  
+   --color-dark: #1D2231;
+   --text-grey: #8390A2;
+   --coolor: #6ea1e9;
+   --blueViolet: blueviolet;
+   --beautiful: #6e25f5;
+   /* color: rgb(9, 240, 163) */
+} 
+.main-patient-card{
+   background: var(--white);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   }
+   .main-patient-card .left-card{
+       background: var(--main-color);
+       /* background: var(--beautiful); */
+       /* background: linear-gradient(to right, var(--beautiful) 6%, var(--coolor) 50%, crimson 100%); */
+       border-radius: 10px;
+       padding: .2rem;
+       width: 40%;
+       }
+       .main-patient-card .right-card{
+           border-radius: 10px;
+           padding: .2rem;
+           width: 60%;
+           }
+           #avatar-name-age{
+               display: flex;
+              flex-wrap: wrap;
+               align-items: flex-start;
+       
+           }
+           #avatar-name-age img{
+               width: 50px;
+               border-radius: 10px;
+               border: 1px solid var(--white);
+               margin-right: 1rem;
+           }
+           #avatar-name-age label{
+           
+             color: var(--white); 
+            
+           }
+           #avatar-name-age label p{
+          padding: 0.1rem;
+             }
+             #gender{
+               color: chartreuse;
+               padding-left: .5rem;
+             }
+             #height-weight-blood{
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: wrap;
+               align-items: flex-start;
+               padding-top: 1rem;
+           }
+           #height-weight-blood label{
+               color: var(--white);
+               padding: 0.5rem;
+           } 
+ 
+           #other-det h4{
+           color: var(--main-color);
+            }
+            #other-det p{
+               color: var(--text-grey);
+               overflow: hidden;
+               display: -webkit-box;
+               -webkit-box-orient: vertical;
+               -webkit-line-clamp: 4;
+               white-space: wrap;
+            }
+            #other-det .btns-opp{
+               display: flex;
+               margin-top: .5rem;
+            }
+            #other-det .btns-opp button{
+               padding: .3rem .8rem;
+               border-radius: 5px;
+               color: var(--white);
+               cursor: pointer;
+            }
+            #other-det .btns-opp button:hover{
+               opacity: .7;
+            }
+            .btn-read{
+            background: var(--green);
+            }
+            .btn-add{
+               background: var(--main-color);
+               margin-left: .5rem;
+           }
+           .btn-edit{
+            background: var(--main-color);
+            margin-left: .5rem;
+            }
+
+       
+/* pop ups */
+#View-lab-card,
+#View-discharge-card,
+#SendToPhamacy-card,
+#ViewMorHist-card,
+#Add-pat-bill-card,
+#Add-pat-medNotes-card,
+#Add-pat-vital-card,
+#Add-pat-appointment-card,
+#Edit-pat-det-card,
+#Order-pat-labtest-card,
+#View-pat-medHist-card,
+#Edit-pat-medHist-card,
+#Add-pat-medHist-card{
+  background: rgba(65,105,255, 0.3);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+margin: auto;
+display: none;
+}
+#View-lab-card.active,
+#View-discharge-card.active,
+#SendToPhamacy-card.active,
+#ViewMorHist-card.active,
+#Add-pat-bill-card.active,
+#Add-pat-medNotes-card.active,
+#Add-pat-vital-card.active,
+#Add-pat-appointment-card.active,
+#Edit-pat-det-card.active,
+#Order-pat-labtest-card.active,
+#View-pat-medHist-card.active,
+#Edit-pat-medHist-card.active,
+#Add-pat-medHist-card.active{
+  display: initial;
+}
+#View-lab-card .field-form{
+  width: 60%;
+   background-color: var(--white);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: .1rem;
+  border-radius: 10px;
+}
+#View-discharge-card .field-form{
+  width: 90%;
+   background-color: var(--white);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: .1rem;
+  border-radius: 10px;
+}
+#Add-pat-bill-card .field-form{
+  width: 90%;
+  /* background-color: var(--white); */
+  background-image: url(resources/img/ste2.jpeg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: .1rem;
+  border-radius: 10px;
+}
+#SendToPhamacy-card .field-form,
+#ViewMorHist-card .field-form,
+#Add-pat-medNotes-card .field-form,
+#Add-pat-vital-card .field-form,
+#Add-pat-appointment-card .field-form,
+#Edit-pat-det-card .field-form,
+#Order-pat-labtest-card .field-form,
+#View-pat-medHist-card .field-form,
+#Edit-pat-medHist-card .field-form,
+#Add-pat-medHist-card .field-form{
+  width: 50%;
+  /* background-color: var(--white); */
+  background-image: url(resources/img/ste2.jpeg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: .1rem;
+  border-radius: 10px;
+}
+#View-lab-card .field-form #canel-field-form,
+#View-discharge-card .field-form #canel-field-form,
+#SendToPhamacy-card .field-form #canel-field-form,
+#ViewMorHist-card .field-form #canel-field-form,
+#Add-pat-bill-card .field-form #canel-field-form,
+#Add-pat-medNotes-card .field-form #canel-field-form,
+#Add-pat-vital-card .field-form #canel-field-form,
+#Add-pat-appointment-card .field-form #canel-field-form,
+#Edit-pat-det-card .field-form #canel-field-form,
+#Order-pat-labtest-card .field-form #canel-field-form,
+#View-pat-medHist-card .field-form #canel-field-form,
+#Edit-pat-medHist-card .field-form #canel-field-form,
+#Add-pat-medHist-card .field-form #canel-field-form{
+  float: right;
+  padding: .6rem;
+  border-radius: 10px;
+}
+#View-lab-card .field-form #canel-field-form:hover,
+#View-discharge-card .field-form #canel-field-form:hover,
+#SendToPhamacy-card .field-form #canel-field-form:hover,
+#ViewMorHist-card .field-form #canel-field-form:hover,
+#Add-pat-bill-card .field-form #canel-field-form:hover,
+#Add-pat-medNotes-card .field-form #canel-field-form:hover,
+#Add-pat-vital-card .field-form #canel-field-form:hover,
+#Add-pat-appointment-card .field-form #canel-field-form:hover,
+#Edit-pat-det-card .field-form #canel-field-form:hover,
+#Order-pat-labtest-card .field-form #canel-field-form:hover,
+#View-pat-medHist-card .field-form #canel-field-form:hover,
+#Edit-pat-medHist-card .field-form #canel-field-form:hover,
+#Add-pat-medHist-card .field-form #canel-field-form:hover{
+    background: var(--border-color);
+}
+#View-lab-card .field-form h2,
+#View-discharge-card .field-form h2,
+#SendToPhamacy-card .field-form h2,
+#ViewMorHist-card .field-form h2,
+#Add-pat-bill-card .field-form h2,
+#Add-pat-medNotes-card .field-form h2,
+#Add-pat-vital-card .field-form h2,
+#Add-pat-appointment-card .field-form h2,
+#Edit-pat-det-card .field-form h2,
+#Order-pat-labtest-card .field-form h2,
+#View-pat-medHist-card .field-form h2,
+#Edit-pat-medHist-card .field-form h2,
+#Add-pat-medHist-card .field-form h2{
+  margin-top: 1rem;
+    color: var(--main-color);
+    text-align: center;
+} 
+#View-lab-card .field-form .main-container,
+#View-discharge-card .field-form .main-container,
+#SendToPhamacy-card .field-form .main-container,
+#ViewMorHist-card .field-form .main-container,
+#Add-pat-bill-card .field-form .main-container,
+#Add-pat-medNotes-card .field-form .main-container,
+#Add-pat-vital-card .field-form .main-container,
+#Add-pat-appointment-card .field-form .main-container,
+#Edit-pat-det-card .field-form .main-container,
+#Order-pat-labtest-card .field-form .main-container,
+#View-pat-medHist-card .field-form .main-container,
+#Edit-pat-medHist-card .field-form .main-container,
+#Add-pat-medHist-card .field-form .main-container{
+ width: 100%;
+ overflow-y: auto;
+ max-height: 550px;
+ padding: 1rem;
+}
+.main-par{
+   border: 1px solid var(--main-color);
+}
+
+
+.field-form .input-wrapper{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   margin-top: 10px;
+   width: 100%;
+}
+.field-form .input-wrapper select,
+.field-form .input-wrapper input{
+     padding: .2rem;
+     border: 1px solid var(--text-grey);
+     width: 100%;
+     height: 100%;
+     font-size: 1rem;
+     color: var(--green);
+}
+.field-form .input-wrapper textarea{
+resize: vertical;
+border: 1px solid var(--main-color);
+height: 100px;
+padding: .5rem;
+color: var(--color-dark);
+}
+.field-form .input-wrapper label{
+ font-size: 1rem;
+ color: var(--main-color);
+}
+.btn-wrapper {
+margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn-wrapper .save-btn{
+padding: .5rem 1rem;
+color: var(--white);
+background: var(--main-color);
+border-radius: 5px;
+}
+
+
+
+
+
+.message-dis{
+   display: none;
+   align-items: center;
+   justify-content: space-between;
+   background: var(--white);
+   box-shadow: 0px 0px 15px var(--green);
+   border-radius: 5px;
+   margin: 0 auto;
+   width: 90%;
+   padding: .2rem;
+   }
+   .message-dis.active{
+       display: none;
+       }
+       .message-dis p{
+         color: var(--green);
+         font-size: 1.2rem;
+       }
+       .message-dis label i{
+       font-size: 1.2rem;
+       color: var(--green);
+       }
+   
+       .message-dis-err{
+           display: none;
+           align-items: center;
+           justify-content: space-between;
+           box-shadow: 0px 0px 15px crimson;
+           background: var(--white);
+           border-radius: 5px;
+           margin: 0 auto;
+           width: 90%;
+           padding: .2rem;
+           }
+           .message-dis-err.active{
+               display: none;
+               }
+               .message-dis-err p{
+                 color: crimson;
+                 font-size: 1.2rem;
+               }
+               .message-dis-err label i{
+               font-size: 1.2rem;
+               color: crimson;
+               }
+   
+   /* @ends */
+
+
+
+
+   .patient-btn-opps{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       background: var(--white);
+       margin-top: 10px;
+       padding: .5rem;
+       border-radius: 5px;
+    }
+
+    .patient-btn-opps button{
+       padding: .4rem .9rem;
+       color: var(--white);
+       border-radius: 5px;
+       margin: .5rem;
+       cursor: pointer;
+       font-size: 1.1rem;
+    }
+    .patient-btn-opps button:hover{
+       opacity: .7;
+    }
+    #btn1{
+       background: var(--green);
+    }
+    #btn2{
+       background: var(--main-color);
+    }
+    #btn3{
+       background: var(--color-dark);
+    }
+    #btn4{
+       background: crimson;
+    }
+
+ /* addd bill section stylings */
+
+ .table-cont{
+  
+  margin: 0 auto;
+  margin-top: 20px;
+  /* width: 97%; */
+  border-radius: 10px;
+  background: var(--white);
+  padding: 1rem;
+  overflow-x: auto;
+  overflow-y: auto;
+  border: 1px solid var(--main-color);
+}
+.table-cont table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-cont table td{
+  /* width: 100%; */
+  border: 1px solid var(--border-color);
+  font-size: 13px;
+  padding: 10px;
+}
+
+.table-cont table td input[type="text"]{
+  border: 1px solid var(--color-dark);
+  background: var(--light-bg-color);
+  color: var(--color-dark);
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+.table-cont table td input[type="number"]{
+  background: var(--light-bg-color);
+  color: var(--color-dark);
+  height: 30px;
+  border-radius: 10px;
+}
+.table-cont table tbody td input[type="button"]{
+color: var(--white);
+background: crimson;
+padding: .5rem;
+border-radius: 10px;
+}
+.table-cont table tfoot td input[type="button"]{
+color: var(--white);
+background: var(--main-color);
+padding: .5rem 1rem;
+border-radius: 10px;
+}
+#text-align{
+  text-align: right;
+}
+#save-btn{
+  padding: .3rem .8rem;
+  color: var(--white);
+  background: crimson;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  /* float: right; */
+}
+
+#no-det h3{
+   color: crimson;
+   text-align: center;
+   padding: .5rem;
+   }
+
+   #sys{
+      margin-top: 10px;
+      }
+      #sys h2{
+      color: var(--color-dark);
+      }
+
+ /* table stlying */
+ #outer-table{
+   background: var(--white);
+   padding: .3rem;
+   margin: 0 auto;
+   width: 100%;
+   margin-top: 10px;
+ 
+ }
+ #outer-table .table-container{
+ width: 100%;
+ overflow-x: auto;
+ max-height: 700px;
+ overflow-y: auto;
+ 
+ }
+ .main-container-table{
+   border-collapse: collapse;
+   width: 100%;
+   margin-bottom: 20px;
+   min-width: 700px;
+ }
+ #head-det{
+   display: flex;
+  flex-direction: row;
+  color: #6e25f5;
+ }
+
+ .body-det{
+   display: flex;
+   flex-direction: row; 
+   cursor: pointer;
+   color: var(--color-dark);
+ }
+ .body-det:hover{
+   background: rgba(65,105,255, 0.2); 
+ }
+ .body-det .bdy{
+   border: 1px solid var(--border-color);
+   margin-top: -1px;
+   margin-right: -1px;
+ }
+ 
+
+ .head-1{
+   width: 15%;
+  
+  }
+  .head-2{
+   width: 15%;
+  }
+  .head-3{
+   width: 15%;
+  }
+  .head-4{
+   width: 30%;
+  }
+  .head-5{
+   width: 25%;
+  }
+
+
+
+ .match-1{
+   width: 15%;
+   padding: .2rem;
+   font-size: .9rem;
+  }
+  .match-2{
+   width: 15%;
+   padding: .2rem;
+   font-size: .9rem;
+  }
+  .match-3{
+   width: 15%;
+   padding: .2rem;
+   font-size: .9rem;
+  }
+  .match-4{
+   width: 30%;
+   padding: .2rem;
+   font-size: .9rem;
+  }
+  .match-5{
+   width: 25%;
+   padding: .2rem;
+   font-size: .9rem;
+  }
+ 
+
+  .match-4 p,
+  .match-1 p,
+ .match-2 p,
+ .match-3 p,
+ .match-5 p{
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+ }
+
+
+ /* patient visit stylings */
+
+.visit-det-cont .single-wraper-label{
+display: flex;
+justify-content: space-between;
+border: 1px dotted var(--color-dark);
+margin-top: .5rem; 
+background: var(--white);
+}
+.visit-det-cont .single-wraper-label label{
+ padding: .5rem;
+}
+.visit-det-cont .single-wraper-label label strong{
+  color: var(--color-dark);
+  }
+.visit-det-cont .single-wraper-label label span{
+   color: var(--beautiful);
+   padding-left: .4rem;
+  }
+  .visit-det-cont .single-wraper-more{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border: 1px dotted var(--color-dark);
+margin-top: .5rem; 
+background: var(--white);
+}
+.visit-det-cont .single-wraper-more label strong{
+   color: var(--color-dark);
+}
+.visit-det-cont .single-wraper-more label{
+   padding: .5rem;
+}
+.visit-det-cont .single-wraper-more label p{
+   color: var(--beautiful);
+}
+.opp-btns-visit-hist {
+    margin-top: .5rem;
+}
+.opp-btns-visit-hist button{
+ padding: .5rem 1rem;
+ color: var(--white);
+ background: var(--green);
+ border-radius: 5px;
+ cursor: pointer;
+}
+.opp-btns-visit-hist button:hover{
+   opacity: .7;
+}
+/* discharge styling */
+#discharge{
+  position: relative;
+}
+#discharge .main-head{
+ text-align: center;
+ color: lightgreen;
+ background: var(--text-grey);
+ border: 1px dotted var(--color-dark);
+}
+#discharge .patient-overview label{
+ display: flex;
+ align-items: baseline;
+}
+#discharge .patient-overview label span{
+  padding-left: .5rem;
+}
+#discharge .patient-overview label h3,
+#discharge .patient-overview label strong{
+  color: var(--main-color);
+} 
+.det-discharge{
+  margin-top: .5rem;
+  padding: .3rem;
+  background: var(--light-bg-color);
+  border: 1px dotted var(--color-dark);
+}
+.det-discharge label strong{
+  color: var(--main-color);
+}
+#man-water-mark{
+  position: relative;
+  bottom: 0;
+}
+#man-water-mark label span{
+  color: var(--main-color);
+}
+#man-water-mark label i{
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+#stamp{
+  margin-top: 20px;
+}
+
+
+
+/* patient's visit details */
+.patient-Visit-card{
+  padding: .5rem;
+  background: var(--white);
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(resources/img/ste4.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.patient-Visit-card .visit-det-left{
+  background: var(--white); 
+  padding: .5rem;
+  border-radius: 5px;
+}
+.patient-Visit-card .visit-det-left label{
+  display: flex;
+  align-items: baseline;
+}
+.patient-Visit-card .visit-det-left label span{
+  color: var(--main-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.patient-Visit-card .visit-det-left label h4{
+color: var(--green);
+padding-right: .5rem;
+font-size: 1.5rem;
+}
+.visit-reason-cont{
+  color: var(--color-dark);
+  font-size: 1.5rem;
+}
+.visit-det-right ul li{
+  margin-top: .2rem;
+  cursor: pointer;
+}
+.visit-det-right ul li .single-btn-like{
+ display: flex;
+ align-items: center;
+
+ padding: .2rem .4rem;
+ background: var(--coolor);
+ color: var(--white);
+ border-radius: 5px;
+}
+.visit-det-right ul li .single-btn-like i{
+  padding-right: 1rem;
+}
+.visit-det-right ul li .single-btn-like:hover{
+  background: var(--color-dark);
+  color: var(--white);
+ }
+ .visit-det-right ul li .discharge-color{
+  background: coral;
+ }
+
+    
+
+@media(max-width: 920px){
+      .main-patient-card{
+                   flex-direction: column;
+                   }
+                  .main-patient-card .left-card{
+                       width: 100%;
+                       }
+                      .main-patient-card .right-card{
+               
+                           width: 100%;
+                           }
+
+                           .patient-Visit-card{
+                            flex-direction: column;
+                          }
+                            
+            }
+
+            @media print{
+              body *{
+                  visibility: hidden;
+              }
+              #discharge, #discharge *{
+              visibility: visible;
+              } 
+              #discharge{
+                  position: absolute;
+                  /* position: relative; */
+                  left: 0;
+                  right: 0;
+                  top: 0;
+                  margin: 0 auto;
+                  /* page-break-after:; */
+                  /* overflow-y: visible; */
+                  page-break-inside:avoid;
+              }
+          /* .invo-table-container table tr{
+              
+              page-break-inside: avoid;
+          } */
+          
+              #man-water-mark{
+                  position: fixed;
+                  bottom: 0;
+               }
+          }

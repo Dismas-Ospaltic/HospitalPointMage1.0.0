@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="managereasourceStyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body>
+
+    <section id="add-emp-card">
+        <div class="field-form">
+        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+        <h2>Add New Staff</h2>
+
+        <div id="message-dis">
+          <p>ssss</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+  
+        <div id="message-err-dis">
+          <p>eeeeee</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+
+        <div class="main-container">
+  
+          <div class="input-wrapper">
+            <label>First Name *</label>
+            <input type="text" name="text_fname" placeholder="please enter first name...">
+           </div>
+  
+           <div class="input-wrapper">
+            <label>Middle Name</label>
+            <input type="text" name="text_mname" placeholder="please enter middle name...">
+           </div>
+
+           <div class="input-wrapper">
+            <label>Last Name *</label>
+            <input type="text" name="text_lname" placeholder="please enter last name...">
+           </div>
+  
+  
+           <div class="input-wrapper">
+            <label>National ID</label>
+            <input type="text" name="text_idno" placeholder="please enter number of national document...">
+           </div>
+
+
+
+           <div class="input-wrapper">
+            <label>Gender</label>
+            <select name="text_gender">
+          <option value="">--Select Gender--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+            </select>
+           </div> 
+  
+           <div class="input-wrapper">
+            <label>email Address *</label>
+            <input type="email" name="text_email" placeholder="please enter email address...">
+           </div>
+  
+           <div class="input-wrapper">
+            <label>Phone No. *</label>
+            <input type="text" name="text_phone" placeholder="please enter Phone number...">
+           </div>
+  
+           <div class="input-wrapper">
+            <label>Role *</label>
+            <select name="text_role">
+          <option value="">--Select Role--</option>
+          <option value="doctor">Doctor</option>
+          <option value="nurse">Nurse</option>
+          <option value="reception">Reception</option>
+          <option value="admin">Admin</option>
+            </select>
+           </div> 
+
+
+           <div class="input-wrapper">
+            <label>Department *</label>
+            <select name="text_dept">
+          <option value="">--Select Department--</option>
+          <option value="dental">Dental</option>
+          <option value="optical">Optical</option>
+          <option value="other">Other</option>
+            </select>
+           </div>
+
+
+           <div class="input-wrapper">
+            <label>Staff No. *</label>
+            <input type="text" name="text_staff" placeholder="please enter Staff No...">
+           </div>
+
+         
+           <div class="btn-wrapper">
+            <button class="emp-save">Save</button>
+           </div>
+  
+        </div>
+        </div>
+        </section>
+
+      
+        <section id="update-emp-card">
+            <div class="field-form">
+            <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+            <h2>Update Staff</h2>
+    
+            <div id="message-dis">
+              <p>ssss</p>
+              <label><i class="fa-solid fa-times-square"></i></label>
+            </div>
+      
+            <div id="message-err-dis">
+              <p>eeeeee</p>
+              <label><i class="fa-solid fa-times-square"></i></label>
+            </div>
+    
+            <div class="main-container">
+      
+                <div class="input-wrapper">
+                    <label>First Name *</label>
+                    <input type="text" name="text_fname" placeholder="please enter first name...">
+                   </div>
+          
+                   <div class="input-wrapper">
+                    <label>Middle Name</label>
+                    <input type="text" name="text_mname" placeholder="please enter middle name...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Last Name *</label>
+                    <input type="text" name="text_lname" placeholder="please enter last name...">
+                   </div>
+          
+          
+                   <div class="input-wrapper">
+                    <label>National ID</label>
+                    <input type="text" name="text_idno" placeholder="please enter number of national document...">
+                   </div>
+        
+        
+        
+                   <div class="input-wrapper">
+                    <label>Gender</label>
+                    <select name="text_gender">
+                  <option value="">--Select Gender--</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                    </select>
+                   </div> 
+          
+                   <div class="input-wrapper">
+                    <label>email Address *</label>
+                    <input type="email" name="text_email" placeholder="please enter email address...">
+                   </div>
+          
+                   <div class="input-wrapper">
+                    <label>Phone No. *</label>
+                    <input type="text" name="text_phone" placeholder="please enter Phone number...">
+                   </div>
+          
+                   <div class="input-wrapper">
+                    <label>Role *</label>
+                    <select name="text_role">
+                  <option value="">--Select Role--</option>
+                  <option value="doctor">Doctor</option>
+                  <option value="nurse">Nurse</option>
+                  <option value="reception">Reception</option>
+                  <option value="admin">Admin</option>
+                    </select>
+                   </div> 
+        
+        
+                   <div class="input-wrapper">
+                    <label>Department *</label>
+                    <select name="text_dept">
+                  <option value="">--Select Department--</option>
+                  <option value="dental">Dental</option>
+                  <option value="optical">Optical</option>
+                  <option value="other">Other</option>
+                    </select>
+                   </div>
+        
+        
+                   <div class="input-wrapper">
+                    <label>Staff No. *</label>
+                    <input type="text" name="text_staff" placeholder="please enter Staff No...">
+                   </div>
+        
+                 
+                   <div class="btn-wrapper">
+                    <button class="emp-save">Save</button>
+                   </div>
+      
+            </div>
+            </div>
+            </section>
+
+
+
+        <section id="add-equipment-card">
+            <div class="field-form">
+            <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+            <h2>Add New Equipment</h2>
+    
+            <div id="message-dis">
+              <p>ssss</p>
+              <label><i class="fa-solid fa-times-square"></i></label>
+            </div>
+      
+            <div id="message-err-dis">
+              <p>eeeeee</p>
+              <label><i class="fa-solid fa-times-square"></i></label>
+            </div>
+    
+            <div class="main-container">
+      
+              <div class="input-wrapper">
+                <label>Product Name*</label>
+                <input type="text" name="text_name" placeholder="please enter name...">
+               </div>
+      
+               <div class="input-wrapper">
+                <label>Product Code/ Serial No*</label>
+                <input type="text" name="text_code" placeholder="please enter serial No. ...">
+               </div>
+    
+               <div class="input-wrapper">
+                <label>Qty*</label>
+                <input type="number" name="text_qty" placeholder="please enter last name...">
+               </div>
+      
+      
+               <div class="input-wrapper">
+                <label>Price</label>
+                <input type="number" name="text_price" placeholder="please enter buying Price...">
+               </div>
+    
+    
+    
+               <div class="input-wrapper">
+                <label>Department</label>
+                <select name="text_dept">
+              <option value="">--Select Department--</option>
+              <option value="dental">dental</option>
+              <option value="optical">optical</option>
+              <option value="other">other</option>
+                </select>
+               </div> 
+      
+               <div class="input-wrapper">
+                <label>Description</label>
+                <textarea name="txt_description" placeholder="write a small description..."></textarea>
+               </div> 
+    
+             
+               <div class="btn-wrapper">
+                <button class="emp-save">Save</button>
+               </div>
+      
+            </div>
+            </div>
+            </section>
+
+
+
+            <section id="update-equipment-card">
+                <div class="field-form">
+                <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                <h2>Update Equipment</h2>
+         
+                <div id="message-dis">
+                  <p>ssss</p>
+                  <label><i class="fa-solid fa-times-square"></i></label>
+                </div>
+          
+                <div id="message-err-dis">
+                  <p>eeeeee</p>
+                  <label><i class="fa-solid fa-times-square"></i></label>
+                </div>
+        
+                <div class="main-container">
+          
+                  <div class="input-wrapper">
+                    <label>Product Name*</label>
+                    <input type="text" name="text_name" placeholder="please enter name...">
+                   </div>
+          
+                   <div class="input-wrapper">
+                    <label>Product Code/ Serial No*</label>
+                    <input type="text" name="text_code" placeholder="please enter serial No. ...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Qty*</label>
+                    <input type="number" name="text_qty" placeholder="please enter last name...">
+                   </div>
+          
+          
+                   <div class="input-wrapper">
+                    <label>Price</label>
+                    <input type="number" name="text_price" placeholder="please enter buying Price...">
+                   </div>
+        
+        
+        
+                   <div class="input-wrapper">
+                    <label>Department</label>
+                    <select name="text_dept">
+                  <option value="">--Select Department--</option>
+                  <option value="dental">dental</option>
+                  <option value="optical">optical</option>
+                  <option value="other">other</option>
+                    </select>
+                   </div> 
+          
+                   <div class="input-wrapper">
+                    <label>Description</label>
+                    <textarea name="txt_description" placeholder="write a small description..."></textarea>
+                   </div> 
+        
+                 
+                   <div class="btn-wrapper">
+                    <button class="emp-save">Save</button>
+                   </div>
+          
+                </div>
+                </div>
+                </section>
+
+
+
+                <section id="department-card">
+                  <div class="field-form">
+                  <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                  <h2>Add Departments</h2>
+      
+      
+                  <div class="main-container">
+            
+                    <div class="input-btn-wrapper">
+                      <input type="text" name="text_dept" placeholder="enter department Name...">
+                      <button><i class="fa-solid fa-plus-circle"></i>Add</button>
+                    </div>
+      
+      
+                    <div class="depart-list">
+                      <h3>all Departments</h3>
+      
+                      <div class="dept-wrapper">
+                       <p>others</p>
+                       <div class="right-btn">
+                        <button class="edit-btn"><i class="fa-solid fa-edit"></i>Edit</button>
+                        <button class="del-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                       </div>
+      
+                      </div>
+                      <section id="no-det">
+                        <h3>No Data Available...</h3>
+                      </section>
+                    </div>
+             
+            
+                  </div>
+                  </div>
+                  </section>
+
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>Manage Hospital Resources</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <!-- <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a> -->
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div>
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href="" class="active"><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-file"></i><span>Departments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+            <section id="main-content">
+                <section id="btn-opps">
+                    <div class="btn-wrapper-opp add-emp">
+                       <label><i class="fa-solid fa-user-plus"></i></label> 
+                       <label>Add Staff</label>
+                    </div>
+                    
+                    <div class="btn-wrapper-opp add-equip">
+                        <label><i class="fa-solid fa-toolbox"></i></label> 
+                        <label>Add Equipments</label>
+                     </div>
+
+                     <div class="btn-wrapper-opp department">
+                      <label><i class="fa-solid fa-book"></i></label> 
+                      <label>Add Departments</label>
+                   </div>
+                     <div class="btn-wrapper-opp">
+                        <label><i class="fa-solid fa-kit-medical"></i></label> 
+                        <label>Add Medicine & Medical Equipments</label>
+                     </div>
+                    
+                    </section>
+
+
+
+
+                    <div id="sys">
+                        <h2>All Employees in the System</h2>
+                        </div>
+                        
+                    <section id="outer-table">
+                        <div class="table-container table-staff">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th id="head-1">Name</th>
+                                        <th id="head-2">Gender</th>
+                                        <th id="head-3">National ID</th>
+                                        <th id="head-4">email</th>
+                                        <th id="head-5">Phone Contact</th>
+                                        <th id="head-6">Role</th>
+                                        <th id="head-7">PassWord</th>
+                                        <th id="head-8">Added On</th>
+                                        <th id="head-9">Action</th>
+                                    </tr>
+                                </thead> 
+                                <tbody>
+                                    <tr>
+                                        <td class="match-1">Dismas Kizai</td>
+                                        <td class="match-2">Male</td>
+                                        <td class="match-3">305485885</td>
+                                        <td class="match-4">kizaidismas@gmail.com</td>
+                                        <td class="match-5">0742354784</td>
+                                        <td class="match-6">Admin</td>
+                                        <td class="match-7">Admin@2023</td>
+                                        <td class="match-8">2023-30-12</td>
+                                        <td class="match-9">
+                                          <button class="edit-btn">Edit</button>
+                                          <button class="del-btn">Delete</button>
+                                        </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td class="match-1">Dismas Kizai</td>
+                                        <td class="match-2">Male</td>
+                                        <td class="match-3">305485885</td>
+                                        <td class="match-4">kizaidismas@gmail.com</td>
+                                        <td class="match-5">0742354784</td>
+                                        <td class="match-6">Admin</td>
+                                        <td class="match-7">Admin@2023</td>
+                                        <td class="match-8">2023-30-12</td>
+                                        <td class="match-9">
+                                          <button class="edit-btn">Edit</button>
+                                          <button class="del-btn">Delete</button>
+                                        </td>
+                                    <tr>
+                                      <td class="match-1">Dismas Kizai</td>
+                                      <td class="match-2">Male</td>
+                                      <td class="match-3">305485885</td>
+                                      <td class="match-4">kizaidismas@gmail.com</td>
+                                      <td class="match-5">0742354784</td>
+                                      <td class="match-6">Admin</td>
+                                      <td class="match-7">Admin@2023</td>
+                                      <td class="match-8">2023-30-12</td>
+                                      <td class="match-9">
+                                        <button class="edit-btn">Edit</button>
+                                        <button class="del-btn">Delete</button>
+                                      </td>
+                                    </tr>
+
+                                </tbody>
+                                <tfoot>
+                    
+                                </tfoot>
+
+                                <!-- <section id="no-det">
+                                  <h3>No Data Available...</h3>
+                                </section> -->
+                            </table>
+                    
+                            <section id="no-det">
+                              <h3>No Data Available...</h3>
+                            </section>
+                    
+                        
+                        </div>
+                    </section>
+
+   
+
+
+                    <div id="sys">
+                        <h2>All Hospital Equipment in the System</h2>
+                        </div>
+                        
+                    <section id="outer-table">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th id="head-11">Name</th>
+                                        <th id="head-22">Serial No</th>
+                                        <th id="head-33">Qty</th>
+                                        <th id="head-44">Price</th>
+                                        <th id="head-55">Department</th>
+                                        <th id="head-66">Description</th>
+                                        <th id="head-77">Actions</th>
+                                    </tr>
+                                </thead> 
+                                <tbody>
+                                    <tr>
+                                      <td class="match-11">many dispensor</td>
+                                      <td class="match-22">838488QXr374</td>
+                                      <td class="match-33">3</td>
+                                      <td class="match-44">60,0000</td>
+                                      <td class="match-55">optical</td>
+                                      <td class="match-66">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Consequatur autem ullam explicabo vero non ex nostrum nihil facere, iste
+                                         molestiae ad sapiente quia modi tenetur animi? Consectetur cupiditate rerum facilis!</td>
+                                      <td class="match-77">
+                                        <button class="edit-btn1">Edit</button>
+                                        <button class="del-btn1">Delete</button>
+                                      </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td class="match-11">many dispensor</td>
+                                        <td class="match-22">838488QXr374</td>
+                                        <td class="match-33">3</td>
+                                        <td class="match-44">60,0000</td>
+                                        <td class="match-55">optical</td>
+                                        <td class="match-66">Lorem ipsum dolor sit amet consectetur 
+                                          adipisicing elit. Consequatur autem ullam explicabo vero non ex nostrum nihil facere, iste
+                                           molestiae ad sapiente quia modi tenetur animi? Consectetur cupiditate rerum facilis!</td>
+                                        <td class="match-77">
+                                          <button class="edit-btn1">Edit</button>
+                                          <button class="del-btn1">Delete</button>
+                                        </td>
+                                    <tr>
+                                        <td class="match-11">many dispensor</td>
+                                        <td class="match-22">838488QXr374</td>
+                                        <td class="match-33">3</td>
+                                        <td class="match-44">60,0000</td>
+                                        <td class="match-55">optical</td>
+                                        <td class="match-66">Lorem ipsum dolor sit amet consectetur 
+                                          adipisicing elit. Consequatur autem ullam explicabo vero non ex nostrum nihil facere, iste
+                                           molestiae ad sapiente quia modi tenetur animi? Consectetur cupiditate rerum facilis!</td>
+                                        <td class="match-77">
+                                          <button class="edit-btn1">Edit</button>
+                                          <button class="del-btn1">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                    
+                                </tfoot>
+                            </table>
+                    
+                            <section id="no-det">
+                              <h3>No Data Available...</h3>
+                            </section>
+                    
+                        
+                        </div>
+                    </section>
+    
+            </section>
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+
+
+    $('#btn-opps .add-emp').click(function(){
+        $('#add-emp-card').addClass('active')
+        });
+
+        $('#add-emp-card .field-form #canel-field-form').click(function(){
+        $('#add-emp-card').removeClass('active')
+        });
+
+        
+    $('#btn-opps .add-equip').click(function(){
+        $('#add-equipment-card').addClass('active')
+        });
+
+        $('#add-equipment-card .field-form #canel-field-form').click(function(){
+        $('#add-equipment-card').removeClass('active')
+        });
+
+
+        $('#outer-table .table-container table tbody tr .edit-btn').click(function(){
+        $('#update-emp-card').addClass('active')
+        });
+
+        $('#update-emp-card .field-form #canel-field-form').click(function(){
+        $('#update-emp-card').removeClass('active')
+        });
+
+
+        $('#outer-table .table-container table tbody tr .edit-btn1').click(function(){
+        $('#update-equipment-card').addClass('active')
+        });
+
+        $('#update-equipment-card .field-form #canel-field-form').click(function(){
+        $('#update-equipment-card').removeClass('active')
+        });
+
+
+        $('.department').click(function(){
+        $('#department-card').addClass('active')
+        });
+
+        $('#department-card .field-form #canel-field-form').click(function(){
+        $('#department-card').removeClass('active')
+        });
+
+        
+        
+       
+    </script>
+
+</body>
+</html>

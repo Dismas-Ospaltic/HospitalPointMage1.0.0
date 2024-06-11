@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="reportStyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body>
+
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>Daily Reports</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a>
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div>
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href="" ><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href="" class="active"><i class="fa-solid fa-file"></i><span>Report</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+    <section id="main-content">
+
+             <section id="report-container">
+             <div class="header-det">
+                <h2>Daily Visit Report</h2>
+             </div>
+
+             <section class="search-container">
+                <div class="search-input-wrapper">
+                 <input type="search" placeholder="search here...">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+     
+                <div class="other-sort">
+                 
+                <div class="select-wrapper">
+                <label>Sort By</label>
+                <select>
+                 <option value="Default">Default</option>
+                 <option value="Date">Date</option>
+                </select>
+                </div>
+                </div>
+                </section>
+
+             <div class="list-cont-repo">
+             <div class="repo-single">
+              <div class="date-cont">
+                <label><i class="fa-solid fa-calendar-alt"></i><strong>Date: </strong></label>
+                <p>2023-04-05</p>
+              </div>
+              <div class="bottom-cont-det">
+                <div class="left-cont-det">
+                 <div class="top-left">
+                  <label><strong>50</strong><p>Visits</p></label>
+                  <label><strong>50</strong><p>Invoices</p></label>
+                 </div>
+                 <div class="bottom-left">
+                    <label><strong>ksh 5000</strong><p>Total Bills</p></label>
+                    <label><strong>ksh 506</strong><p>Paid</p></label>
+                 </div>
+                </div>
+                 <div class="right-cont-opp">
+                  <a href="single.html"><span>view Visits</span><i class="fa-solid fa-arrow-circle-right"></i></a>
+                  <a href="single.html"><span>view Invoices</span><i class="fa-solid fa-arrow-circle-right"></i></a>
+                 </div>
+              </div>
+             </div>
+
+
+
+             <div class="repo-single">
+                <div class="date-cont">
+                  <label><i class="fa-solid fa-calendar-alt"></i><strong>Date: </strong></label>
+                  <p>2023-04-05</p>
+                </div>
+                <div class="bottom-cont-det">
+                  <div class="left-cont-det">
+                   <div class="top-left">
+                    <label><strong>50</strong><p>Visits</p></label>
+                    <label><strong>50</strong><p>Invoices</p></label>
+                   </div>
+                   <div class="bottom-left">
+                      <label><strong>ksh 5000</strong><p>Total Bills</p></label>
+                      <label><strong>ksh 506</strong><p>Paid</p></label>
+                   </div>
+                  </div>
+                   <div class="right-cont-opp">
+                    <a href="single.html"><span>view Visits</span><i class="fa-solid fa-arrow-circle-right"></i></a>
+                    <a href="single.html"><span>view Invoices</span><i class="fa-solid fa-arrow-circle-right"></i></a>
+                   </div>
+                </div>
+               </div>
+
+
+               <div class="repo-single">
+                <div class="date-cont">
+                  <label><i class="fa-solid fa-calendar-alt"></i><strong>Date: </strong></label>
+                  <p>2023-04-05</p>
+                </div>
+                <div class="bottom-cont-det">
+                  <div class="left-cont-det">
+                   <div class="top-left">
+                    <label><strong>50</strong><p>Visits</p></label>
+                    <label><strong>50</strong><p>Invoices</p></label>
+                   </div>
+                   <div class="bottom-left">
+                      <label><strong>ksh 5000</strong><p>Total Bills</p></label>
+                      <label><strong>ksh 506</strong><p>Paid</p></label>
+                   </div>
+                  </div>
+                   <div class="right-cont-opp">
+                    <a href="single.html"><span>view Visits</span><i class="fa-solid fa-arrow-circle-right"></i></a>
+                    <a href="single.html"><span>view Invoices</span><i class="fa-solid fa-arrow-circle-right"></i></a>
+                   </div>
+                </div>
+               </div>
+
+               <section id="no-det">
+                <h3>No Data Available...</h3>
+              </section>
+             </div>
+             </section>
+    
+    </section>
+
+
+
+
+
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+    </script>
+
+</body>
+</html>

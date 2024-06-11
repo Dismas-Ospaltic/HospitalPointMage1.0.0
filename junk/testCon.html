@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Check Internet Connection</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function checkInternetConnection() {
+			var xhr = new XMLHttpRequest();
+			xhr.open('HEAD', 'http://localhost/HMSMage/junk/billing.html', false);
+			try {
+				xhr.send();
+				if (xhr.status >= 200 && xhr.status < 300) {
+					return true;
+				} else {
+					return false;
+				}
+			} catch (error) {
+				return false;
+			}
+		}
+		
+		if (checkInternetConnection()) {
+			// Internet connection is online
+			
+				// Perform your action when internet is online
+				// e.g. update database with online status
+				console.log("online");
+		} else {
+			// Internet connection is offline
+			
+				// Perform your action when internet is offline
+				// e.g. update database with offline status
+				console.log("offline");
+		}
+	</script>
+</body>
+</html>

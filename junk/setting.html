@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="settingStyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body>
+
+
+    <section id="update-profile-card">
+        <div class="field-form">
+        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+        <h2>Update Profile</h2>
+
+        <div class="message-dis">
+            <p>Patient add successfully</p>
+            <label><i class="fa-solid fa-times-square"></i></label>
+          </div>
+       
+          <div class="message-dis-err">
+            <p>Patient add falied</p>
+            <label><i class="fa-solid fa-times-square"></i></label>
+          </div>
+
+        <div class="main-container">
+  
+          <div class="input-wrapper">
+            <label>First Name *</label>
+            <input type="text" name="text_fname" placeholder="please enter first name...">
+           </div>
+
+           <div class="input-wrapper">
+            <label>Middle Name</label>
+            <input type="text" name="text_mname" placeholder="please enter middle name...">
+           </div>
+
+           <div class="input-wrapper">
+            <label>Last Name *</label>
+            <input type="text" name="text_lname" placeholder="please enter lastname...">
+           </div>
+  
+           <div class="input-wrapper">
+            <label>Email *</label>
+            <input type="text" name="text_mail" placeholder="please enter Email address...">
+           </div>
+  
+  
+  
+           <div class="input-wrapper">
+            <label>Phone</label>
+            <input type="text" name="text_phone" placeholder="please enter Phone No...">
+           </div>
+
+           <div class="input-wrapper">
+            <label>Staff No.</label>
+            <input type="text" name="text_staff" placeholder="please enter Staff No...">
+           </div>
+
+
+           <div class="input-wrapper">
+            <label>National Id</label>
+            <input type="text" name="text_nid" placeholder="please enter Id No...">
+           </div>
+
+         
+           <div class="btn-wrapper">
+            <button class="btn-save-update">Save</button>
+           </div>
+      
+        </div>
+        </div>
+        </section>
+
+
+
+        <section id="update-biz-profile-card">
+            <div class="field-form">
+            <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+            <h2>Update Facility Profile</h2>
+            <div class="message-dis">
+                <p>Patient add successfully</p>
+                <label><i class="fa-solid fa-times-square"></i></label>
+              </div>
+          
+              <div class="message-dis-err">
+                <p>Patient add falied</p>
+                <label><i class="fa-solid fa-times-square"></i></label>
+              </div>
+            <div class="main-container">
+      
+                <div class="input-wrapper">
+                    <label>Facility Name *</label>
+                    <input type="text" name="text_name" placeholder="please enter first name...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Email*</label>
+                    <input type="text" name="text_mail" placeholder="please enter middle name...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Contact *</label>
+                    <input type="text" name="text_contact" placeholder="please enter last name...">
+                   </div>
+          
+                   <div class="input-wrapper">
+                    <label>Address *</label>
+                    <input type="text" name="text_address" placeholder="please enter address...">
+                   </div>
+
+             
+               <div class="btn-wrapper">
+                <button class="btn-save-update">Save</button>
+               </div>
+      
+            </div>
+            </div>
+            </section>
+            
+    
+            <section id="update-passkey-card">
+                <div class="field-form">
+                <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                <h2>Change Password</h2>
+                <div class="message-dis">
+                    <p>Patient add successfully</p>
+                    <label><i class="fa-solid fa-times-square"></i></label>
+                  </div>
+              
+                  <div class="message-dis-err">
+                    <p>Patient add falied</p>
+                    <label><i class="fa-solid fa-times-square"></i></label>
+                  </div>
+                <div class="main-container">
+          
+                  <div class="input-wrapper">
+                    <label>Old Password*</label>
+                    <input type="password" name="text_old" placeholder="please enter Old password...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>New Password*</label>
+                    <input type="password" name="text_new1" placeholder="please enter new password...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Confirm Password *</label>
+                    <input type="password" name="text_new2" placeholder="please confirm new password...">
+                   </div>
+        
+    
+                 
+                   <div class="btn-wrapper">
+                    <button class="btn-save-update">Save</button>
+                   </div>
+          
+                </div>
+                </div>
+                </section>
+
+            <section id="add-biz-profile-card">
+                <div class="field-form">
+                <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                <h2>Add Facility Profile</h2>
+                <div class="message-dis">
+                    <p>Patient add successfully</p>
+                    <label><i class="fa-solid fa-times-square"></i></label>
+                  </div>
+              
+                  <div class="message-dis-err">
+                    <p>Patient add falied</p>
+                    <label><i class="fa-solid fa-times-square"></i></label>
+                  </div>
+                <div class="main-container">
+          
+                  <div class="input-wrapper">
+                    <label>Facility Name *</label>
+                    <input type="text" name="text_name" placeholder="please enter first name...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Email*</label>
+                    <input type="text" name="text_mail" placeholder="please enter middle name...">
+                   </div>
+        
+                   <div class="input-wrapper">
+                    <label>Contact *</label>
+                    <input type="text" name="text_contact" placeholder="please enter last name...">
+                   </div>
+          
+                   <div class="input-wrapper">
+                    <label>Address *</label>
+                    <input type="text" name="text_address" placeholder="please enter address...">
+                   </div>
+          
+    
+                 
+                   <div class="btn-wrapper">
+                    <button class="btn-save-update">Save</button>
+                   </div>
+          
+                </div>
+                </div>
+                </section>
+
+                <section id="Offline-backup-card">
+                    <div class="field-form">
+                    <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                    <h2>Backup Details</h2>
+                    
+                    <div class="main-container">
+                        <div class="backup-det-cont">
+                       <p>
+                     The offline Database Backup make copies of your database to the local machine. 
+                     This Data redundancy Prevents Data loss in Case of System Failure Or any Other Software Malware.
+                     The Backup is done automatically by the system at interval of 30 days By default.
+                     This Can also be done by clicking the Backup Button.
+                       </p>
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+
+
+                    <section id="Online-backup-card">
+                        <div class="field-form">
+                        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                        <h2>Backup Details</h2>
+                        
+                        <div class="main-container">
+                            <div class="backup-det-cont">
+                           <p>
+                         The online Database Backup make copies of your database to the online Server through the internet. 
+                         This Data redundancy Prevents Data loss in Case of System Failure Or any Other Software Malware.
+                         The Backup is done automatically by the system at interval of 30 days by Default.
+                         This Can also be done by clicking the Backup Button.
+                         This Service updates An online database.
+                         The service is not activated yet but it will be soon, Contact Developer for more info.
+                           </p>
+                            </div>
+                        </div>
+                        </div>
+                        </section>
+
+
+
+
+
+
+
+                <section id="Security-card">
+                    <div class="field-form">
+                    <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+                    <h2>Security Question</h2>
+                    <div class="message-dis">
+                        <p>Patient add successfully</p>
+                        <label><i class="fa-solid fa-times-square"></i></label>
+                      </div>
+                  
+                      <div class="message-dis-err">
+                        <p>Patient add falied</p>
+                        <label><i class="fa-solid fa-times-square"></i></label>
+                      </div>
+                    <div class="main-container">
+
+
+
+                        <div class="input-wrapper">
+                            <label>National Id*</label>
+                            <input type="text" name="text_nid" placeholder="please enter national id...">
+                           </div>
+
+                        <div class="input-wrapper">
+                            <!-- <label>What's your favorite meal</label> -->
+                            <p id="quiz">What's your favorite meal</p>
+                           </div>
+            
+                       <div class="input-wrapper">
+                        <label>Answer*</label>
+                        <input type="text" name="text_answer" placeholder="please enter an answer for security question...">
+                       </div>
+              
+        
+                     
+                       <div class="btn-wrapper">
+                        <button class="btn-save-update">Submit</button>
+                       </div>
+              
+                    </div>
+                    </div>
+                    </section>
+
+
+
+                    <section id="ofline-data-backup-card">
+                      <div class="field-form">
+                      <p>Offline Backup in progress...</p>
+                      <div class="message-dis">
+                          <p>Patient add successfully</p>
+                        </div>
+                    
+                        <div class="message-dis-err">
+                          <p>Patient add falied</p>
+                        </div>
+                      <div class="main-container">
+                        <div class="loader-img">
+                          <img src="resources/img/loader.gif" alt="Loading...">
+                        </div>
+                      </div>
+                      </div>
+                      </section>
+
+
+                      <section id="online-data-backup-card">
+                        <div class="field-form">
+                        <p>Online Backup in progress...</p>
+                        <div class="message-dis">
+                            <p>Patient add successfully</p>
+                          </div>
+                      
+                          <div class="message-dis-err">
+                            <p>Patient add falied</p>
+                          </div>
+                        <div class="main-container">
+                          <div class="loader-img">
+                            <img src="resources/img/loader.gif" alt="Loading...">
+                          </div>
+                        </div>
+                        </div>
+                        </section>
+
+
+
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>Manange Settings</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <!-- <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a> -->
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div> 
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href="report.php"><i class="fa-solid fa-file"></i><span>Report</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+            <section id="main-content">
+
+
+           <section id="profile-sec">
+             <div class="user-pro">
+              <div class="icon-header">
+                <i class="fa-solid fa-user"></i>
+                <h3>User Profile</h3>
+              </div>
+
+              <div class="list-det">
+                <label><strong>Name: </strong><span>melly Weins</span></label>
+                <label><strong>Email: </strong><span>mellyWeins@gmail.com</span></label>
+                <label><strong>Contact: </strong><span>+254 789087087</span></label>
+                <label><strong>Role: </strong><span>admin</span></label>
+                <label><strong>Staff No: </strong><span>555</span></label>
+                <label><strong>ID No.: </strong><span>675884</span></label>
+                <label><strong>Department: </strong><span>dental</span></label>
+
+                <div class="btn-opps">
+               <button class="btn-edit"><i class="fa-solid fa-edit"></i>Edit Profile</button>
+               <button class="btn-change"><i class="fa-solid fa-lock-open"></i>Change Password</button>
+                </div>
+              </div>
+             </div>
+
+             <div class="facility-pro">
+                <div class="icon-header">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h3>Facility Profile</h3>
+                  </div>
+                  <div class="not-data-sec">
+                    <h3>No Data Available...</h3>
+                  </div>
+                  <div class="list-det">
+                    <label><strong>Name: </strong><span>Medvina medical Services</span></label>
+                    <label><strong>Email: </strong><span>mellyWeins@gmail.com</span></label>
+                    <label><strong>Contact: </strong><span>+254 789087087</span></label>
+                    <label><strong>Address </strong><span>PO BOX 30-30600</span></label>
+    
+                    <div class="btn-opps">
+                        <button class="btn-add-facility"><i class="fa-solid fa-house"></i>Add Facility Profile</button>
+                   <button class="btn-edit-facility"><i class="fa-solid fa-edit"></i>Edit Facility Profile</button>
+
+                    </div>
+                  </div>
+             </div>
+           </section>
+
+
+           <section class="security-quiz">
+            <label><i class="fa-solid fa-question-circle"></i><span>Security Question.</span></label>
+            <div class="select-cont">
+            <div class="wrapp-cont-security">
+                <select name="text_security">
+                    <option value="">--Select Security Quiz--</option>
+                    <option value="What is Your Favorite Hobby">What's Your Favorite Hobby</option>
+                    <option value="What is Your date of Birth">What's Your date of Birth</option>
+                    <option value="What is Your place of birth">What's Your place of birth</option>
+                    <option value="What is Your Favorite Meal">What's Your Favorite Meal</option>
+                    <option value="What is Your favorite Childhood Memory">What's Your favorite Childhood Memory</option>
+                    <option value="What is the nick name of your partner">What is the nick name of your partner</option>
+                    <option value="Type A random fun fact">Type A random fun fact</option>
+                    </select>
+            </div>
+            <div class="wrapp-cont-security">
+           <input type="text" name="text_answer" placeholder="enter answer...">
+            </div>
+     
+            </div>
+            <div class="btn-cont-opps">
+                <button class="btn-add-answer"><i class="fa-solid fa-save"></i>Save Answer</button>
+            </div>
+           </section>
+          
+           <section id="data-backup">
+            <div class="header-sec">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Backup</h3>
+            </div>
+
+            <div class="two-opt">
+                <div class="opt-1">
+                <label><i class="fa-solid fa-home-lg"></i>Local Backup</label>
+                <div class="det-btn">
+                    <button class="btn-opt-1">Backup Now</button>
+                    <button class="btn-opt-2">View Info</button>
+                </div>
+                </div>
+                 
+                <div class="opt-2">
+                    <label><i class="fa-solid fa-globe"></i>Local Backup</label>
+                    <div class="det-btn">
+                        <button class="btn-opt-1">Backup Now</button>
+                        <button class="btn-opt-2">View Info</button>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+    
+            </section>
+
+
+
+
+
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+
+
+    $('.btn-opps .btn-edit').click(function(){
+        $('#update-profile-card').addClass('active')
+        });
+    
+        $('#update-profile-card .field-form #canel-field-form').click(function(){
+        $('#update-profile-card').removeClass('active')
+        });
+
+        $('.btn-opps .btn-edit-facility').click(function(){
+        $('#update-biz-profile-card').addClass('active')
+        });
+    
+        $('#update-biz-profile-card .field-form #canel-field-form').click(function(){
+        $('#update-biz-profile-card').removeClass('active')
+        });
+
+
+        $('.btn-opps .btn-add-facility').click(function(){
+        $('#add-biz-profile-card').addClass('active')
+        });
+     
+        $('#add-biz-profile-card .field-form #canel-field-form').click(function(){
+        $('#add-biz-profile-card').removeClass('active')
+        });
+
+
+        $('.btn-opps .btn-change').click(function(){
+        $(' #update-passkey-card').addClass('active')
+        });
+    
+        $('#update-passkey-card .field-form #canel-field-form').click(function(){
+        $('#update-passkey-card').removeClass('active')
+        });
+
+
+        $('#data-backup .two-opt .opt-1 .det-btn .btn-opt-1').click(function(){
+        $('#Security-card').addClass('active')
+        });
+    
+        $('#Security-card .field-form #canel-field-form').click(function(){
+        $('#Security-card').removeClass('active')
+        });
+
+
+        $('#data-backup .two-opt .opt-1 .det-btn .btn-opt-2').click(function(){
+        $('#Offline-backup-card').addClass('active')
+        });
+    
+        $('#Offline-backup-card .field-form #canel-field-form').click(function(){
+        $('#Offline-backup-card').removeClass('active')
+        });
+
+        $('#data-backup .two-opt .opt-2 .det-btn .btn-opt-2').click(function(){
+        $('#Online-backup-card').addClass('active')
+        });
+    
+        $('#Online-backup-card .field-form #canel-field-form').click(function(){
+        $('#Online-backup-card').removeClass('active')
+        });
+
+        
+
+        $('.message-dis-err label').click(function(){
+        $('.message-dis-err').addClass('active')
+        });
+
+        $('.message-dis label').click(function(){
+        $('.message-dis').addClass('active')
+        });
+
+    </script>
+
+</body>
+</html>

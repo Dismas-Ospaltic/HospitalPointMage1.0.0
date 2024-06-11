@@ -1,0 +1,80 @@
+:root{
+   
+    --main-color: royalblue;
+    --secondary-color:orangered;
+    --green: #27ae60;
+    --black: #333;
+    --white: #fff;
+    --light-bg-color: #f2f3f5;
+    --border-color: #e5e8ec;
+    /* --navyBlue: rgba(0, 0, 128, 50%); */
+    --navyBlue: rgba(0, 0, 119, 0.8);
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+    --coolor: #6ea1e9;
+    --blueViolet: blueviolet;
+    --beautiful: #6e25f5;
+    /* color: rgb(9, 240, 163) */
+ } 
+ #main-container{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 60%;
+    border-radius: 10px;
+    background: var(--white);
+    padding: 1rem;
+ }
+ #main-container h1{
+    color: var(--main-color);
+    text-align: center;
+    font-weight: 600;
+ }
+ .form-container .input-wrapper{
+    display: flex;
+    flex-direction: column;
+ }
+ .form-container .input-wrapper .input-btn{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border: 1px solid var(--beautiful);
+  border-radius: 10px;
+  overflow: hidden;
+ }
+ .form-container .input-wrapper .input-btn input{
+   font-size: 1.3rem;
+   color: var(--beautiful);
+   width: 70%;
+   padding: .1rem;
+ }
+ .form-container .input-wrapper .input-btn button{
+    color: var(--white);
+   
+ }
+ .form-container .input-wrapper .input-btn .activate{
+   background: crimson;
+   width: 10%;
+ }
+ .form-container .input-wrapper .input-btn .app{
+   background: var(--main-color);
+   width: 20%;
+ }
+ #message{
+   background: var(--navyBlue);
+   border-radius: 10px;
+   padding: .2rem;
+   color: whitesmoke;
+   width: fit-content;
+ }
+
+ @media (max-width: 720px){
+   #main-container{
+      width: 95%;
+      padding: .5rem;
+   }
+   .form-container .input-wrapper .input-btn{
+      width: 100%;
+     }
+
+
+ }

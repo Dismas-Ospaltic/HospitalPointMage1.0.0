@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select and Textarea Example</title>
+</head>
+<body>
+
+<select id="selectField">
+  <option value="Option 1">Option 1</option>
+  <option value="Option 2">Option 2</option>
+  <option value="Option 3">Option 3</option>
+</select>
+
+<textarea id="textarea"></textarea>
+
+<script>
+  const selectField = document.getElementById('selectField');
+  const textarea = document.getElementById('textarea');
+
+  selectField.addEventListener('change', function() {
+    const selectedValue = selectField.value;
+    const currentText = textarea.value;
+
+    if (currentText === '') {
+      textarea.value = selectedValue;
+    } else {
+      textarea.value = currentText + ';' + selectedValue;
+    }
+  });
+</script>
+
+</body>
+</html>

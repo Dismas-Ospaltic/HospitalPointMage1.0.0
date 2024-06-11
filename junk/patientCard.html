@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hospital Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="patientCardstyle.css">
+        <link rel="stylesheet" href="resources/css/all.min.css">
+        <link rel="stylesheet" href="resources/css/fontawesome.min.css">
+         <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="resources/CDN-links/swiper-bundle.css"
+  />   
+
+        <script src="resources/CDN-links/jquery.min.js"></script>
+    </head>
+<body> 
+
+  <section id="Edit-pat-card">
+    <div class="field-form">
+    <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+    <h2>Update Patient Details</h2>
+    <div class="message-dis">
+      <p>Patient add successfully</p>
+      <label><i class="fa-solid fa-times-square"></i></label>
+    </div>
+
+    <div class="message-dis-err">
+      <p>Patient add falied</p>
+      <label><i class="fa-solid fa-times-square"></i></label>
+    </div>
+
+    <div class="main-container">
+    <form action="#" method="post">
+      <div class="input-wrapper">
+        <label>First name *</label>
+        <input type="text" name="text_fname" placeholder="please enter first name...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Middle name</label>
+        <input type="text" name="text_mname" placeholder="please enter middle name...">
+       </div>
+
+
+       <div class="input-wrapper">
+        <label>last Name *</label>
+        <input type="text" name="text_lname" placeholder="please enter last name...">
+       </div>
+
+
+       <div class="input-wrapper">
+        <label>Age *</label>
+        <input type="text" name="text_age" placeholder="please enter Age...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Gender *</label>
+        <select name="text_gender">
+      <option value="">--Select Gender--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+        </select>
+       </div> 
+
+       <div class="input-wrapper">
+        <label>Department *</label>
+        <select name="text_dep">
+      <option value="">--Select Department--</option>
+      <option value="Dental">Dental</option>
+      <option value="Optical">Optical</option>
+        </select>
+       </div>
+
+       <div class="input-wrapper">
+        <label>ODP NO /IDP NO*</label>
+        <input type="text" name="text_odp" placeholder="please enter Age...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Service type *</label>
+        <select name="text_service">
+      <option value="out patient">out Patient</option>
+      <option value="in patient">In Patient</option>
+        </select>
+       </div>
+
+
+       <div class="input-wrapper">
+        <label>National Id/ Passport</label>
+        <input type="text" name="text_nid" placeholder="please enter national Identity no...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>email</label>
+        <input type="text" name="text_email" placeholder="please enter email Address...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Contact *</label>
+        <input type="text" name="text_phone" placeholder="please enter phone No...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Residence</label>
+        <input type="text" name="text_residence" placeholder="please enter patient residence...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Insurance Company</label>
+        <input type="text" name="text_incomp" placeholder="please enter name of insurance company...">
+       </div>
+
+       <div class="input-wrapper">
+        <label>Insurance Member</label>
+        <input type="text" name="text_inno" placeholder="please enter name of insurance No...">
+       </div>
+     
+       <div class="btn-wrapper">
+        <button class="save-btn"><i class="fa-solid fa-plus"></i>Update Patient</button>
+       </div>
+      </form>
+    </div>
+    </div>
+    </section>
+
+
+    <section id="Add-pat-visit-card">
+      <div class="field-form">
+      <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+      <h2>Add Patient Visit</h2>
+      <div class="message-dis">
+        <p>Patient add successfully</p>
+        <label><i class="fa-solid fa-times-square"></i></label>
+      </div>
+  
+      <div class="message-dis-err">
+        <p>Patient add falied</p>
+        <label><i class="fa-solid fa-times-square"></i></label>
+      </div>
+  
+      <div class="main-container">
+      <form action="#" method="post">
+
+  
+         <div class="input-wrapper">
+          <label>Visit Reason *</label>
+          <select name="text_reason">
+            <option value="">--Select Reason--</option>
+            <option value="Illness or Disease">Illness or Disease</option>
+             <option value="Injury or Accident">Injury or Accident</option>
+             <option value="Routine Check-ups">Routine Check-ups</option>
+             <option value="Chronic Condition Management">Chronic Condition Management</option>
+             <option value="Surgery or Procedures">Surgery or Procedures</option>
+             <option value="Maternity and Obstetrics">Maternity and Obstetrics</option>
+             <option value="Emergency Care">Emergency Care</option>
+             <option value="Specialist Consultation">Specialist Consultation</option>
+             <option value="Mental Health Concerns">Mental Health Concerns</option>
+             <option value="Diagnostic Testing">Diagnostic Testing</option>
+             <option value="Rehabilitation">Rehabilitation</option>
+             <option value="Palliative Care and End-of-Life Care">Palliative Care and End-of-Life Care</option>
+             <option value="Other">Other</option>
+          </select>
+         </div> 
+  
+         <div class="input-wrapper">
+          <label>Department *</label>
+          <select name="text_dep">
+        <option value="">--Select Department--</option>
+        <option value="Dental">Dental</option>
+        <option value="Optical">Optical</option>
+          </select>
+         </div>
+
+         <div class="input-wrapper">
+          <label>Visit Type *</label>
+          <select name="text_vtype">
+        <option value="out patient">out patient</option>
+        <option value="in patient">in patient</option>
+          </select>
+         </div>
+
+         <div class="input-wrapper">
+          <label>Visit Status *</label>
+          <select name="text_vtype">
+          <option value="">--select Emergency or non-emergency--</option>
+        <option value="Non Emergency">Non-Emergency</option>
+        <option value="Emergency">Emergency</option>
+          </select>
+         </div>
+  
+       
+         <div class="btn-wrapper">
+          <button class="save-btn"><i class="fa-solid fa-plus"></i>Add Visit</button>
+         </div>
+        </form>
+      </div>
+      </div>
+      </section>
+
+
+      <section id="Add-pat-appointment-card">
+        <div class="field-form">
+        <div id="canel-field-form"><i class="fa-solid fa-times"></i></div>
+        <h2>Add Appointment</h2>
+        <div class="message-dis">
+          <p>Patient add successfully</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+    
+        <div class="message-dis-err">
+          <p>Patient add falied</p>
+          <label><i class="fa-solid fa-times-square"></i></label>
+        </div>
+        
+        <div class="main-container">
+        <form action="#" method="post">
+            <div class="input-wrapper">
+                <label>Appointment Date *</label>
+               <input type="date" name="text_AppDate" placeholder="Please enter Date">
+               </div>    
+
+               <div class="input-wrapper">
+                <label>Start Time *</label>
+               <input type="time" name="text_Stime" placeholder="Please enter Start Time">
+               </div>
+
+
+               <div class="input-wrapper">
+                <label>Finish Time*</label>
+               <input type="time" name="text_Ftime" placeholder="Please enter Finish time">
+               </div>
+
+
+            <div class="input-wrapper">
+                <label>Appointment Reason *</label>
+               <input type="text" name="text_appReason" placeholder="Please enter appointment reason">
+            </div>
+
+
+          
+    
+           <div class="btn-wrapper">
+            <button class="save-btn"><i class="fa-solid fa-plus"></i>Add Appointment</button>
+           </div>
+          </form>
+        </div>
+        </div>
+        </section>
+    <section id="loader">
+        <div class="loader-img">
+          <img src="resources/img/loaderr.gif" alt="Loading...">
+        </div>
+    </section>
+
+    <main>
+
+        <section id="upper-nav">
+            <div class="upper-left">
+            <label>
+                <i class="fa-solid fa-bars" id="add"></i>
+
+                <i class="fa-solid fa-bars" id="rem"></i>
+               <h2>patient's Card</h2>
+            </label>
+            </div>
+            <div class="upper-right">
+            <!-- <a href="report.html"><i class="fa-solid fa-clipboard-list"></i>Today's Visits</a> -->
+              <div class="appointment-hist">
+              <label><strong>Appointment History</strong><i class="fa-solid fa-angle-down"></i></label>
+              <div class="list-hit-apt">
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+              <div class="single-list">
+                <p>2023-03-04</p>
+                <p><i class="fa-solid fa-info-circle"></i></p>
+              </div>
+
+              <h4>No data To show...</h4>
+              </div>
+              </div>
+          
+            <div class="notify">
+              <i class="fa-solid fa-bell" id="bell"></i>
+              <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+          
+                <div class="user-acc">
+                  <div class="avatar">
+                   <i class="fa-solid fa-user" id="user"></i>
+                   <i class="fa-solid fa-circle" id="circle"></i>
+                     </div>
+                     <div class="user-name">
+                       <p><strong>Admin</strong></p>
+                       <p><small>Dismas Wanyala ffddddd dddeeee fdd ddgggdgg dggdhdhhdh dggdggdggd dhhdh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, aperiam dolore voluptatibus, tempora quaerat laboriosam voluptas eos est voluptates repudiandae impedit harum soluta consequuntur consequatur, voluptate adipisci distinctio? Rerum, aperiam.</small></p>
+                     </div>
+                   </div> 
+          
+            </div>
+              </section>
+
+              <section id="side-bar-menu">
+                <div class="biz-brand">
+                 <h2>Medivina Medical</h2>
+                </div>
+              
+                <div id="menu-ntro">
+              <label><strong>Main menu</strong></label>
+                </div>
+
+                <div class="main-menu">
+                    <div class="first-sub">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-dashboard"></i><span>Dashboard</span></a></li>
+                            <li><a href="" class="active"><i class="fa-solid fa-hospital-user"></i><span>Patient</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-user-nurse"></i><span>Doctor</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-house-medical"></i><span>Laboratory</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-people-group"></i><span>Hospital Resources</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-file"></i><span>Departments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-clipboard-list"></i><span>Billing & Payments</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-money-bills"></i><span>Accounts</span></a></li>     
+                            <li><a href=""><i class="fa-solid fa-comment-sms"></i><span>Messages</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-user-cog"></i><span>Help</span></a></li>
+                           
+                          </ul>
+                    </div>
+
+                    <div class="second-sub">
+                        <ul>
+                          <li><a href="" id="log"><i class="fa-solid fa-arrow-left"></i><span>Logout</span></a></li>
+                          <li><a href="" id="set"><i class="fa-solid fa-gears"></i><span>Settings</span></a></li>     
+                          <li><a href="" id="abt"><i class="fa-solid fa-info-circle"></i><span>About Software</span></a></li>
+                          </ul>
+                    </div>
+
+                </div>
+
+        
+            </section>
+
+
+
+        <section id="main-content">
+
+            <div class="main-patient-card">
+                <div class="left-card">
+                <div id="avatar-name-age">
+                <img src="resources/img/patient.jpg">
+                <label>
+                  <p><strong>Deiring Fleming Daisy</strong></p>
+                  <p>23 years old<span id="gender">Female</span></p>
+                </label>
+                </div>
+                <div id="height-weight-blood">
+                <label>
+                  <p><small>Height</small></p>
+                  <p>185</p>
+                </label>
+                 
+                <label>
+                  <p><small>Weight</small></p>
+                  <p>65 kg</p>
+                </label>
+                
+                <label>
+                  <p><small>Blood Type</small></p>
+                  <p>O+</p>
+                </label>
+                
+                </div>
+                </div>
+                <div class="right-card">
+                <div id="other-det">
+                  <div class="other-det-container">
+                <label>
+                  <p><small>Phone</small></p>
+                  <p>0742354784</p>
+                </label>
+                 
+                <label>
+                  <p><small>email</small></p>
+                  <p>kizaidismas@gmail.com</p>
+                </label>
+                </div>
+                
+                <div class="other-det-container">
+                  <label>
+                    <p><small>Residence</small></p>
+                    <p>Kapenguria</p>
+                  </label>
+                   
+                  <label>
+                    <p><small>National Id</small></p>
+                    <p>45555776</p>
+                  </label>
+                  </div>
+                
+                  <div class="other-det-container">
+                    <label>
+                      <p><small>Hospital Patient No.</small></p>
+                      <p>0742354784 fff</p>
+                    </label>
+                     
+                    <label>
+                      <p><small>IDP / ODP No</small></p>
+                      <p>34/2023</p>
+                    </label>
+                    </div>
+                
+                    <div class="other-det-container">
+                      <label>
+                        <p><small>Insurance company</small></p>
+                        <p>NHIF</p>
+                      </label>
+                       
+                      <label>
+                        <p><small>Insurance Member No.</small></p>
+                        <p>2636367</p>
+                      </label>
+                      </div>
+             
+                </div>
+                </div>
+                 </div>
+
+
+                <div class="patient-btn-opps">
+                    <button id="btn1"><i class="fa-solid fa-add"></i>Add Visit</button>
+                    <button id="btn2"><i class="fa-solid fa-user-doctor"></i>Send to Doctor</button>
+                    <button id="btn3"><i class="fa-solid fa-list-1-2"></i>Fix Appointment</button>
+                    <button id="btn4"><i class="fa-solid fa-edit"></i>Edit Patient Deteils</button>
+                </div>
+
+ 
+                <div id="sys">
+                    <h2>patients Visit History</h2>
+                    </div>
+
+                    <section class="search-container">
+                        <div class="search-input-wrapper">
+                         <input type="search" placeholder="search here...">
+                         <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        </section>
+        
+                   <section id="outer-table">
+                    <div class="table-container">
+        
+                       <div class="main-container-table">
+                        <div id="head-det">
+                       <div class="head-1">
+                        <p><strong>Visit</strong></p>
+                       </div>
+                       <div class="head-2">
+                        <p><strong>Reason</strong></p>
+                       </div>
+                       <div class="head-3">
+                        <p><strong>Department</strong></p>
+                       </div>
+                       <div class="head-4">
+                        <p><strong>Visit Date</strong></p>
+                       </div>
+                       <div class="head-5">
+                        <p><strong>Discharge Date</strong></p>
+                       </div>
+                       <div class="head-6">
+                        <p><strong>Doctor</strong></p>
+                       </div>
+
+                        </div>
+        
+        
+        
+                        <div class="body-det">
+                          <div class="bdy match-1">
+                           <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                          </div>
+                          <div class="bdy match-2">
+                           <p>Name dddddddddddd ddddddddddd</p>
+                          </div>
+                          <div class="bdy match-3">
+                           <p>Name ssssssssssssssssss rer e</p>
+                          </div>
+                          <div class="bdy match-4">
+                           <p>Name ddffffffffff</p>
+                          </div>
+                          <div class="bdy match-5">
+                           <p>Name fffffffffffffff</p>
+                          </div>
+                          <div class="bdy match-6">
+                           <p>Name dsddd ddddddddddddddd</p>
+                          </div>
+                           </div>
+                      
+        
+                       <div class="body-det">
+                        <div class="bdy match-1">
+                            <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                           </div>
+                           <div class="bdy match-2">
+                            <p>Name dddddddddddd ddddddddddd</p>
+                           </div>
+                           <div class="bdy match-3">
+                            <p>Name ssssssssssssssssss rer e</p>
+                           </div>
+                           <div class="bdy match-4">
+                            <p>Name ddffffffffff</p>
+                           </div>
+                           <div class="bdy match-5">
+                            <p>Name fffffffffffffff</p>
+                           </div>
+                           <div class="bdy match-6">
+                            <p>Name dsddd ddddddddddddddd</p>
+                           </div>
+                         </div>
+                   
+        
+                     <div class="body-det">
+                        <div class="bdy match-1">
+                            <p>Name eeeeeeeeeeeeeee rrrrrrrrrrrrrrrrrrr eeeeeeeeeeeeee2</p>
+                           </div>
+                           <div class="bdy match-2">
+                            <p>Name dddddddddddd ddddddddddd</p>
+                           </div>
+                           <div class="bdy match-3">
+                            <p>Name ssssssssssssssssss rer e</p>
+                           </div>
+                           <div class="bdy match-4">
+                            <p>Name ddffffffffff</p>
+                           </div>
+                           <div class="bdy match-5">
+                            <p>Name fffffffffffffff</p>
+                           </div>
+                           <div class="bdy match-6">
+                            <p>Name dsddd ddddddddddddddd</p>
+                           </div>
+                    </div>
+                        
+                
+                        <section id="no-det">
+                          <h3>No Data Available...</h3>
+                        </section>
+                
+                      </div>
+                    </div>
+                </section>
+
+    
+        </section>
+
+
+    </main>
+
+    <script>
+     $('.upper-left label #add').click(function(){
+    $('#side-bar-menu').addClass('active')
+    $('#side-bar-menu .main-menu ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').addClass('active')
+    $('#side-bar-menu .main-menu ul li').addClass('active')
+
+    $('#add').addClass('active')
+    $('#upper-nav').addClass('active')
+    $('#rem').addClass('active')
+    $('#main-content').addClass('active')
+    });
+    
+
+    $('.upper-left label #rem').click(function(){
+    $('#side-bar-menu').removeClass('active')
+    $('#side-bar-menu .main-menu ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu .second-sub ul li a span').removeClass('active')
+    $('#side-bar-menu .main-menu ul li').removeClass('active')
+    $('#add').removeClass('active')
+    $('#rem').removeClass('active')
+    $('#upper-nav').removeClass('active')
+    $('#main-content').removeClass('active')
+    });
+
+    
+  $(function(){
+    $('.upper-right .appointment-hist label').hover(
+      function(){
+        $('.upper-right .appointment-hist .list-hit-apt').addClass('visible');
+      }
+    );
+
+    $('#main-content').hover(
+      function(){
+        $('.upper-right .appointment-hist .list-hit-apt').removeClass('visible');
+      }
+    );
+    
+    $('#side-bar-menu').hover(
+      function(){
+        $('.upper-right .appointment-hist .list-hit-apt').removeClass('visible');
+      }
+    );
+
+    $('.upper-right .appointment-hist .list-hit-apt').hover(function(){},function(){
+      $(this).removeClass('visible');
+    })
+    
+  });
+
+  
+     $('#btn4').click(function(){
+        $('#Edit-pat-card').addClass('active')
+        });
+
+        $('#Edit-pat-card .field-form #canel-field-form').click(function(){
+        $('#Edit-pat-card').removeClass('active')
+        });
+
+        $('.message-dis-err label').click(function(){
+        $('.message-dis-err').addClass('active')
+        });
+
+        $('.message-dis label').click(function(){
+        $('.message-dis').addClass('active')
+        });
+
+
+        $('#btn1').click(function(){
+        $('#Add-pat-visit-card').addClass('active')
+        });
+
+        $('#Add-pat-visit-card .field-form #canel-field-form').click(function(){
+        $('#Add-pat-visit-card').removeClass('active')
+        });
+
+
+        $('#btn3').click(function(){
+        $('#Add-pat-appointment-card').addClass('active')
+        });
+
+        $('#Add-pat-appointment-card .field-form #canel-field-form').click(function(){
+        $('#Add-pat-appointment-card').removeClass('active')
+        });
+        
+        
+    </script>
+
+</body>
+</html>
